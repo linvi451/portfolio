@@ -369,7 +369,11 @@ nav>a:hover::after{
     color:#ccc;
     font-size:15px;
 }
-
+.box>.smallBox>a{
+    font-weight: 600;
+    font-size:15px;
+    text-align: right;
+}
 #work .box:hover{
     opacity:1;
     transition:transform 0.5s ;
