@@ -1,0 +1,193 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+section{
+    width:100%;
+    color:#434343;
+    padding:50px;
+}
+section .wrap{
+    width:1200px;
+    margin:auto;
+}
+section .txtBox>p{
+    text-align:center;
+    margin-bottom:20px;
+}
+.title>h2{
+    font-size:25px;
+    font-weight:normal;
+    color:#434343;
+    letter-spacing: 20px;
+}
+.title>.line{
+    width:100%;
+    height:10px;
+    margin:20px 0;
+    background-color:#959595;
+}
+.logoBox{
+    position:relative;
+    margin:30px 0;
+    
+}
+.logoBox >.logoImg{
+    width:270px;
+    padding:30px;
+    border:1px solid #959595;
+}
+.logoBox>.titleTxt{
+    width:900px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:300px;
+}
+.titleTxt>p{
+    letter-spacing: 20px;
+}
+.titleTxt>p::after{
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #bcbcbc;
+}
+.logoImg>img{
+    width:100%;
+}
+.imgLine{
+    width:100%;
+    height:250px;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.scrollImg1{
+    background-image:url("../img/bookline.jpg");
+}
+.scrollImg2{
+    background-image:url('../img/book.jpg');
+}
+/*하단 민음사 이미지*/
+.minumLogo{
+    text-align: center;
+}
+@media screen and (max-width:1200px) {
+    section .wrap{
+        width:100%;
+        margin:auto;
+    }
+    section .txtBox>p{
+        margin-bottom:15px;
+    }
+    .title>h2{
+        font-size:20px;
+        font-weight:normal;
+        text-align: center;
+        color:#434343;
+        letter-spacing: 20px;
+    }
+    .title>.line{
+        width:100%;
+        height:10px;
+        margin:10px 0;
+        background-color:#959595;
+    }
+    .logoBox{
+        position:relative;
+        margin:30px 0;
+        
+    }
+    .logoBox >.logoImg{
+        width:100%;
+        margin:auto;
+        padding:30px;
+        text-align: center;
+        border:1px solid #959595;
+        margin:20px 0;
+
+    }
+    .logoBox>.titleTxt{
+        width:100%;
+        position:relative;
+        top:0;
+        transform:translateY(0%);
+        left:0px;
+    }
+    .titleTxt>p{
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .titleTxt>p::after{
+        content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #bcbcbc;
+    }
+    .minumLogo{
+        text-align: center;
+    }
+    .minumLogo img{
+        width:100%;
+    }
+}
+@media screen and (max-width:780px) {
+    section .wrap{
+        width:100%;
+        margin:auto;
+    }
+    section .txtBox>p{
+        margin-bottom:15px;
+    }
+    .title>h2{
+        font-size:20px;
+        font-weight:normal;
+        text-align: center;
+        color:#434343;
+        letter-spacing: 20px;
+    }
+    .title>.line{
+        width:100%;
+        height:10px;
+        margin:10px 0;
+        background-color:#959595;
+    }
+    .logoBox{
+        position:relative;
+        margin:30px 0;
+        
+    }
+    .logoBox >.logoImg{
+        width:100%;
+        margin:auto;
+        padding:30px;
+        text-align: center;
+        border:1px solid #959595;
+        margin:20px 0;
+
+    }
+    .logoBox>.titleTxt{
+        width:100%;
+        position:relative;
+        top:0;
+        transform:translateY(0%);
+        left:0px;
+    }
+    .titleTxt>p{
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .titleTxt>p::after{
+        content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #bcbcbc;
+    }
+    .minumLogo{
+        text-align: center;
+    }
+    .minumLogo img{
+        width:100%;
+    }
+}

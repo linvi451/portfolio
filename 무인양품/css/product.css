@@ -1,0 +1,351 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+section {
+    width: 100%;
+    min-width:1200px;
+}
+section .wrap{
+    width:1200px;
+    margin:50px auto;
+}
+/*arrow*/
+.arrow{
+    position:absolute;
+    width:10px;
+    height:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+.arrow>img{
+    width:100%;
+}
+.prev{
+    left:0;
+}
+.next{
+    right:0;
+}
+/*좌측 제품 이미지*/
+#product>.wrap>div{
+    width:550px;
+    margin:10px 25px;
+    float:left;
+}
+.productImg{
+    width:550px;
+    height:550px;
+    margin-bottom:20px;
+    border: 1px solid #bdbcbc;
+}
+.productImg img{
+    width:100%;
+}
+.productSlide{
+    position:relative;
+}
+
+.cover{
+    overflow: hidden;
+    width:550px;
+    height:90px;
+    position: relative;
+
+}
+
+.productPhoto{
+    position:absolute;
+    width:1000%;
+    left:-220px;
+
+}
+.productPhoto>li{
+    float:left;
+    width:90px;
+    height:90px;
+    margin:0 10px;
+    overflow: hidden;
+    border: 1px solid #bdbcbc;
+}
+.productPhoto img{
+    width:100%;
+}
+/*우측 상품 정보*/
+.productInfo{
+    width:550px;
+    float:right;
+    font-family: 'Montserrat','ONE-Mobile-Regular';
+    outline:1px solid #bdbcbc;
+    padding:20px;
+    margin-bottom:10px;
+}
+.productInfo>.tag{
+    margin-bottom:20px;
+}
+.productInfo>.tag>span{
+    font-weight: 800;
+    color:#7f0019;
+    margin-right:10px;
+}
+.productName{
+    margin-bottom:30px;
+}
+.productName>h1{
+    font-size:30px;
+}
+.productName>.info{
+    font-family:'Montserrat','ONE-Mobile-Regular';
+    text-align: right;
+
+}
+.info>p>span{
+    font-weight:normal;
+    font-size:20px;
+}
+.info>p>span:first-child{
+    margin-right: 40px;
+}
+.delivery>p>span:first-child{
+    margin-right: 50px;
+}
+.info>p>span:nth-child(2){
+    font-size:17px;
+}
+.info>p{
+    font-weight:800;
+    font-size:45px;
+}
+.price>p>span{
+    margin-left:10px;
+}
+.delivery>p>span:last-child{
+    font-size:12px;
+}
+/*form-select*/
+.productInfo{
+    margin-bottom:20px;
+}
+.productInfo>form>p{
+    padding:10px 0;
+}
+.productInfo form label{
+    font-family:'Montserrat','ONE-Mobile-Regular';
+}
+.productInfo label span:first-child{
+    font-weight:900;
+    font-size: 25px;
+    margin-right:10px;
+}
+.productInfo form select{
+    outline:0;
+    width:500px;
+    height:30px;
+    border:1px solid #7f0019;
+
+}
+/*하단 옵션 박스*/
+.optionBox{
+    outline:1px solid #bdbcbc;
+    height:70px;
+    padding:20px;
+    position:relative;
+}
+.optionBox button{
+    width:20px;
+    height:20px;
+    border:1px solid #bdbcbc;
+}
+.optionBox>span{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.optionBox>span:first-child{
+    left:20px;
+}
+.optionBox>span:nth-child(3){
+    font-weight: bold;
+    right:20px;
+}
+.optionBox>.selectOpt{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+.selectOpt>input[type=text]{
+    width:50px;
+    height:20px;
+    border:1px solid #bdbcbc;
+}
+.selectOpt>button{
+    width:20px;
+    height:20px;
+    border:1px solid #bdbcbc;
+}
+.selectOpt>button:active{
+    background-color:#eee;
+}
+/*구매버튼*/
+.optbtn>form>input:first-child{
+    background-color:#7f0019;
+    color:#fff;
+    width:300px;
+    height:90px;
+    border:0;
+    outline:0;
+    margin-right: 10px;
+    font-size:20px;
+    font-weight: 700;
+}
+.optbtn>form>input{
+    width:240px;
+    height:40px; 
+    float: left;
+    margin-bottom:10px;
+    background-color:#d3d3d3;
+    outline:0;
+    border:0;
+    font-weight: 700;
+    cursor: pointer;
+}
+.optbtn>form>input:nth-child(3){
+    background-color:#fff;
+    border:1px solid #d3d3d3;
+}
+/*addline*/
+#add .adline {
+    width:1200px;
+    height:50px;
+    border:1px solid #d3d3d3;
+    line-height: 50px;
+    text-align: center;
+    margin:10px 0;
+}
+
+.adline span:first-child{
+    font-weight: 700;
+    font-size:25px;
+    z-index: 9999;
+}
+.line1{
+    color:#013274;
+}
+.line2 span:last-child{
+    font-size:15px;
+    font-weight: 500;
+}
+.line2 {
+    position:relative;
+    overflow: hidden;
+    background-color: #e1ddcf;
+    background-image: url(/img/ad2_img.png);
+    background-size: 500px;
+    background-position:right;
+    background-repeat: no-repeat;
+}
+.line2 img{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:1;
+}
+/*안내*/
+#notice .notice{
+    background-color:#f5eedd;
+    width:1200px;
+    margin:20px 0;
+    border-top:10px solid #7f0019;
+    border-bottom:10px solid #7f0019;
+    text-align: center;
+    padding:25px 0;
+    font-family: 'ONE 모바일고딕 Title';
+    line-height: 1.6;
+}
+.notice h3{
+    color:#3f3f3f;
+    line-height:2
+}
+.notice>p{
+    color:#7f0019;
+}
+#productPhoto .photoInfo>li{
+    width:600px;
+    height:50px;
+    line-height:50px;
+    border:2px solid #888888;
+    text-align: center;
+    float:left;
+    font-weight: 500;
+    font-size:16px;
+    color:#888888;
+}
+.photoInfo>li:last-child{
+    margin-left:-2px;
+}
+
+#productPhoto .photoInfo>li.active,
+#productPhoto .photoInfo>li:hover{
+    color:#7f0019;
+    border-color:#7f0019;
+}
+.photoList{
+    margin:auto;
+    position:relative;
+}
+.photoList>li{
+    width:100%;
+    margin:auto;
+    text-align:center;
+    top:0;
+    left:0;
+}
+.photoList .hide{
+    display: none;
+}
+/*recommend Box*/
+#recommend .recommendLine{
+    width:1200px;
+    height:50px;
+    background-color:#7f0019;
+    text-align:center;
+    line-height: 50px;
+    color:#fff;
+}
+.showBox{
+    position:relative;
+    margin:20px 0;
+    height:420px;
+    
+    overflow: hidden;
+}
+.recommendBox{
+    position:absolute;
+    width:1800px;
+    top:0px;
+    left:-300px;
+    text-align: center;
+}
+.recommendBox>li{
+    float:left;
+    margin:0 10px;
+}
+.recommendBox .recomImg{
+    width:280px;
+    height:380px;
+    overflow: hidden;
+    position:relative;
+    border:2px solid #888888;
+}
+.recommendBox>li p{
+    font-size:15px;
+    font-weight: 700;
+}
+.recomImg img{
+    width:400px;
+    position:absolute;
+    text-align: center;
+    top:0;
+    left:-25%;
+}

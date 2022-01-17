@@ -1,0 +1,96 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+section{
+    width:100%;
+    min-width:1200px;
+}
+section .wrap{
+    width:1200px;
+    margin:auto;
+}
+section{
+    width:100%;
+    font-family: 'Noto Sans KR',sans-serif;
+    font-size:15px;
+}
+#main_head{
+    margin-bottom:100px;
+}
+#main_head>.about_img{
+    width:100%;
+    min-width:1200px;
+}
+.about_img img{
+    width:100%;
+}
+#main_head .wrap{
+    position:relative;
+}
+#main_head h1{
+    font-size:60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    top:-50px;;
+}
+.txt_b{
+    text-align: center;
+    font-size:16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color:#3f3f3f;
+}
+.txt_b p{
+    margin-bottom:70px;
+
+}
+.txt_b b{
+    color:#7f0019;
+    font-weight: 700;
+}
+#contents .imgBox{
+    width:1200px;
+    height:320px;
+    margin-bottom:70px; 
+}
+.imgBox>li{
+    height:320px;
+    float:left;
+    overflow: hidden;
+
+    position:relative;
+}
+.imgBox>li:first-child{
+    width:700px;
+}
+.imgBox>li:nth-child(2){
+    width:500px;
+}
+.matt{
+    position:absolute;
+    top:-350px;
+    left:-400px;
+}
+.imgBox>li:nth-child(2)>img{
+    width:100%;
+}
+.imgBox_bg{
+    width:1200px;
+    height:320px;
+    background: url('../img/portablelight.jpg'), url(../img/portablelight.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    margin-bottom:50px;
+}
+.centerImg{
+    width:100%;
+    min-width: 1200px;
+    margin-bottom:50px;
+}
+.centerImg>img{
+    width:100%;
+}
+#thridContents {
+    margin-bottom:200px;
+}

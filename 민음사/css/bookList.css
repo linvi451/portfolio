@@ -1,0 +1,339 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+section{
+    width:100%;
+}
+section .wrap{
+    width:1200px;
+    margin:auto;
+}
+/*===========================(titleLine)============================*/
+#titleLine{
+    margin-top:50px;
+    width:100%;
+    height:350px;
+    background: url(../img/bookline.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+    position:relative;
+}
+#titleLine h2{
+    text-align:center;
+    font-size:40px;
+    color:#fff;
+    line-height: 350px;
+}
+#titleLine .list{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color:#009869;
+}
+#titleLine .list>li{
+    width:200px;
+    text-align: center;
+    transition:0.2s;
+    line-height:60px;
+}
+#titleLine .list>li:hover{
+    background-color:#037854;
+    transition:0.2s;
+}
+/*==================  (book List)============================*/
+.arrayBox{
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:40px auto 50px;
+}
+.arrayBox>.select{
+    display:flex;
+    align-items: center;
+}
+.arrayBox>.select>li{
+    margin:0 10px;
+    transition:0.2s;
+}
+.arrayBox>.select>li:hover{
+    text-decoration: underline;
+    transition:0.2s;
+}
+.arrayBox>.search{
+    display:flex;
+}
+.arrayBox>.search>input{
+    outline:0;
+    width:300px;
+    padding:5px 0;
+    text-indent: 5px;
+}
+.search >.searchBtn{
+    width:30px;
+    height:30px;
+    margin-left:-1px;
+    background-color:#009869;
+    margin-right:30px;
+    line-height:35px;
+    text-align: center;
+    color:#fff;
+}
+.search>.align{
+    width:30px;
+    height:30px;
+    line-height:35px;
+    text-align: center;
+    color:#fff;
+    background-color:#009869;
+    font-size:20px;
+}
+/*======책 리스트=====*/
+.bookArray{
+    width:90%;
+    margin:30px auto;
+}
+.array{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.array>li{
+    width:25%;
+    padding:10px 15px;
+    cursor: pointer;
+}
+.bookImg{
+    width:100%;
+    height:400px;
+    margin:auto;
+    text-align: center;
+}
+.bookImg img{
+    width:100%;
+}
+.array .txtBox{
+    width:100%;
+    height: 150px;
+    position:relative;
+}
+.txtBox h3{
+    font-size:20px;
+    position:absolute;
+    top:10px;
+}
+.txtBox .author{
+    position:absolute;
+    top:80%;
+    transform: translateY(-70%);
+    left:0;
+}
+.txtBox .author>li{
+    font-size:14px;
+    color:#555;
+}
+.txtBox>p:nth-child(2){
+    position:absolute;
+    top:45%;
+    color:#009869;
+}
+.txtBox p:last-child{
+    position:absolute;
+    bottom:0;
+    font-size: 12px;
+}
+.numList{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
+    color:#037854;
+}
+.numList>.num{
+    display: flex;
+}
+.num>li,.numList>.btn{
+    width:30px;
+    height:30px;
+    margin:0 5px;
+    line-height: 30px;
+    text-align: center;
+    border: 1.5px solid #009869;
+    cursor: pointer;
+    transition:0.2s;
+}
+
+.num>li:hover{
+    background-color:#009869;
+    color:#fff;
+    transition:0.2s;
+}
+ 
+@media screen and (max-width:1200px) {
+    section .wrap{
+        width:100%;
+        margin:auto;
+    }
+    .arrayBox{
+        width:90%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:40px auto 50px;
+    }
+    .arrayBox>.select{
+        display:flex;
+        align-items: center;
+    }
+    .arrayBox>.select>li{
+        margin:0 10px;
+        transition:0.2s;
+    }
+    .arrayBox>.select>li:hover{
+        text-decoration: underline;
+        transition:0.2s;
+    }
+    .arrayBox>.search{
+        display:flex;
+    }
+    .arrayBox>.search>input{
+        outline:0;
+        width:300px;
+        padding:5px 0;
+        text-indent: 5px;
+    }
+    .search >.searchBtn{
+        width:30px;
+        height:30px;
+        margin-left:-1px;
+        background-color:#009869;
+        margin-right:30px;
+        line-height:35px;
+        text-align: center;
+        color:#fff;
+    }
+    .search>.align{
+        display: none;
+    }
+    .bookArray{
+        width:90%;
+        margin:30px auto;
+    }
+    .array{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .array>li{
+        width:33.33%;
+        padding:15px;
+    }
+    .bookImg{
+        height:360px;
+        overflow: hidden;
+        margin:auto;
+        text-align: center;
+    }
+    .bookImg img{
+        height:100%;
+    }
+    .array .txtBox{
+        width:100%;
+    }
+    .txtBox h3{
+        position:absolute;
+        top:20px;
+        font-size:15px;
+    }
+    .txtBox .author>li{
+        font-size:13px;
+        color:#555;
+    }
+    .txtBox p:last-child{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:780px) {
+    section .wrap{
+        width:100%;
+        margin:auto;
+    }
+    .arrayBox{
+        width:100%;
+        margin:20px auto 40px;
+    }
+    .arrayBox>.select>li{
+        margin:0 20px;
+        transition:0.2s;
+    }
+    .arrayBox>.select>li:hover{
+        text-decoration: underline;
+        transition:0.2s;
+    }
+    .arrayBox>.search{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .arrayBox>.search>input{
+        outline:0;
+        width:150px;
+        padding:5px 0;
+        text-indent: 5px;
+    }
+    .search >.searchBox{
+        width:30px;
+        height:30px;
+        margin-left:-1px;
+        background-color:#009869;
+        margin-right:30px;
+        line-height:35px;
+        text-align: center;
+        color:#fff;
+    }
+    .search>.align{
+      display: none;
+    }
+    .bookArray{
+        width:90%;
+        margin:30px auto;
+    }
+    .array{
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .array>li{
+        width:50%;
+        padding:10px 15px;
+    }
+    .bookImg{
+        height:280px;
+        overflow: hidden;
+        margin:auto;
+        text-align: center;
+    }
+    .bookImg img{
+        height:100%;
+    }
+    .array .txtBox{
+        width:100%;
+    }
+    .txtBox h3{
+        font-size:15px;
+    }
+    .txtBox .author>li{
+        font-size:13px;
+        color:#555;
+    }
+    .txtBox p:last-child{
+        font-size: 10px;
+    }
+}

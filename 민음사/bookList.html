@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>민음사</title>
+        <link rel="stylesheet" href="css/bookList.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src='js/head.js' defer></script>
+    </head>
+    <body>
+        <header id="menu">
+            <div id= search>
+                <p class="close">&times;</p>
+                <div class="searchBox">
+                    <input type="search" placeholder=" search..." >
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="wrap">
+                <h1 id="logo"><a href="index.html"><img src="img/minumsa.png" alt="logo"></a></h1>
+                <a href="#" class="toggleBtn"><i class="fas fa-bars"></i></a>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="about.html">소개</a></li>
+                        <li>도서
+                            <ul class="sub">
+                                <li>
+                                    <a href="bookList.html">전체 도서</a>
+                                </li>
+                                <li>
+                                    <a href="#">베스트셀러</a>
+                                </li>
+                                <li>
+                                    <a href="#">추천도서</a>
+                                </li>
+                                <li>
+                                    <a href="#">전자책</a>
+                                </li>
+                                <li>
+                                    <a href="#">독자리뷰</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>문학상
+                            <ul class="sub">
+                                <li>
+                                    <a href="#">전체 도서</a>
+                                </li>
+                                <li>
+                                    <a href="#">베스트셀러</a>
+                                </li>
+                                <li>
+                                    <a href="#">추천도서</a>
+                                </li>
+                                <li>
+                                    <a href="#">전자책</a>
+                                </li>
+                                <li>
+                                    <a href="#">독자리뷰</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>북클럽&#183;릿터</li>
+                        <li>SHOP</li>
+                    </ul>
+                    <ul class="user">
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    </ul>
+                    <ul class="mypage">
+                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    </ul>
+                </nav>
+            </div><!--wrap End-->
+        </header>
+        <section id ="titleLine">
+            <h2>도서</h2>
+            <ul class="list">
+                <li>전체도서</li>
+                <li>한국문학</li>
+                <li>외국문학</li>
+                <li>논 픽션</li>
+                <li>잡지&#183;기타</li>
+            </div><!--warp End-->
+        </section>
+        <section id="bookList">
+            <div class="wrap">
+                <div class="arrayBox">
+                    <ul class="select">
+                        <li>최근순</li>
+                        <li>인기순</li>
+                        <li>리뷰순</li>
+                    </ul>
+                    <div class="search">
+                        <input type="text">
+                        <div class="searchBtn">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="align">
+                            <i class="fas fa-th-list"></i>
+                        </div>
+                        <div class="align">
+                            <i class="fas fa-border-all"></i>
+                        </div>
+                    </div><!--search End-->
+                </div><!--array End-->
+                <div class="bookArray">
+                    <ul class="array">
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/세문전_호밀밭의파수꾼_표1-300x510.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>호밀밭의 파수꾼</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/이밤은괜찮아내일은모르겠지만_표1-300x440.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>이밤은 괜찮아,<br> 내일은 모르겠지만</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/45_끝까지-살아-있는-존재_표1-300x446.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>끝까지 살아 있는 존재</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/55_진짜이야기_표1-300x449.jpg">
+                            </div>
+                            <div class="txtBox">
+                                <h3>진짜이야기</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/50_고블린 도깨비 시장-300x449.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>고블린 도깨비 시장</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/53표1띠지-300x445.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>꽃의 연약함이<br>공간을 관통한다.</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/54-표1띠지-300x446.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>패터슨</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/파워오브독_표11-300x449.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>파워 오브 독</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/앙리-브륄라르의-생애_표1-300x511.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>앙리 브륄라르의 생애</h3>
+                                <p>세계문학전집</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/조금밖에-죽지-않은-오후_표1-300x449.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>조금밖에 죽지 않은 오후</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/브람스를좋아하세요_표1_띠지-300x427.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>브람스를 좋아하세요</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                        <li>
+                            <div class="bookImg">
+                                <img src="img/마음의심연_표1_띠지-300x427.jpg" alt='book1'>
+                            </div>
+                            <div class="txtBox">
+                                <h3>마음의 심연</h3>
+                                <p>시리즈 세계시인선</p>
+                                <ul class="author">
+                                    <li>| 글 보리스 파스테르나크 </li>
+                                    <li>| 옮김 최종술 </li>
+                                </ul>
+                                <p>
+                                    <a href="#">크게보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">미리보기</a>
+                                    <span>&#183;</span>
+                                    <a href="#">독자리뷰</a>
+                                </p>
+                            </div><!--txtBox End-->
+                        </li>
+                    </ul><!--array End-->
+                </div><!--bookArray End-->
+                <div class="numList">
+                    <div class="prev btn">&#171;</div>
+                    <ul class="num">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                    <div class="next btn">&#187;</div>
+                </div>
+            </div><!--wrapEnd-->
+        </section>
+        <footer>
+            <div class="wrap">
+                <div class="footLine">
+                    <a href="#">회원약관</a>
+                    <a href="#">개인정보 처리방침</a>
+                    <a href="#">문의</a>
+                    <span><b>2차저작권 문의 가이드</b></span>
+                    <a href="#">국내 저작물</a>
+                    <span>&#47;</span>
+                    <a href="#">해외 저작물</a>
+                    <a href="#">위치 및 연락처</a>
+                    <a href="#">사이트맵</a>
+                    <a href="#">소식 RSS</a>
+                    <a href="#">민음사 도서 RSS</a>
+                    <a href="#">ENGLISH</a>
+                </div>
+               <div class="infomation">
+                   <p>(주)민음북스 | 대표이사: 박상준 | 사업자등록번호: 211-88-41803 | 통신판매업 신고번호: 제2010-서울강남-00971호<br>
+                    주소: 서울시 강남구 신사동 506 강남출판문화센터 5층 | 새주소: 서울시 강남구 도산대로 1길 62 5층<br>
+                    전화: 02-515-2000 | webmaster@minumsa.com</p>
+               </div>
+            </div><!--wrap End-->
+        </footer>
+    </body>
+</html>

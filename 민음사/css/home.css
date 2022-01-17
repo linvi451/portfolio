@@ -1,0 +1,643 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+section{
+    width:100%;
+    margin-bottom:70px;
+}
+section>.wrap{
+    width:1200px;
+    margin:auto;
+}
+/*메인이미지*/
+#main{
+    margin:50px 0;
+    width:100%;
+    overflow: hidden;
+    background:#ebebeb;
+    text-align:center;
+}
+.slideImg{
+    width:100%;
+}
+/*================*/
+/*릿터*/
+#middleMain{
+    background-color:#f2f2f2;
+    margin-bottom:100px;
+}
+.bookLine{
+    width:1000px;
+    margin:auto;
+    height:200px;
+    position:relative;
+    overflow: hidden;
+}
+.bookBox{
+    position:absolute;
+    width:30%;
+    top:50%;
+    transform: translateY(-50%);
+    left:100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookBox>.bookTxt{
+    margin-top:20px;
+    margin-right:20px;
+    line-height: 1.2;
+}
+.bookBox img{
+    width:100%;
+}
+.littorBox{
+    position:absolute;
+    top:0;
+    right:50px;
+    width:350px;
+    height:200px;
+    overflow: hidden;
+}
+.littorBox>img{
+    width:200px;
+}
+.littorBox>img:last-child{
+    position:absolute;
+    top:50px;
+    left:150px;
+}
+/*==========================*/
+
+/*인기도서  bookSlide*/
+#bookSlide{
+    background:#f2f2f2;
+    padding:20px 0;
+}
+#bookSlide .wrap{
+    text-align: center;
+}
+#bookSlide span{
+    display: inline-block;
+    width:90px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+    border:2px solid #009869;
+    background:#fff;
+    font-size:14px;
+    margin:20px 5px;
+}
+#bookSlide span.clicked{
+    background-color:#009869;
+    color:#fff;
+}
+/*책 선택*/
+#bookWrap{
+    width:100%;
+    position:relative;
+}
+#bookWrap>ul.show{
+    z-index: 999;
+    display: flex;
+}
+#bookWrap>ul{
+    width:100%;
+    height:400px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-self: flex-end;
+}
+#bookWrap li{
+    height:195px;
+    position:relative;
+    transition:0.5s linear;
+    align-self: flex-end;
+}
+#bookWrap .txt_b{
+    position:absolute;
+    width:600px;
+    height:200px;
+    top:20px;
+    left:300px;
+    visibility: hidden;
+    text-align:left;
+    transition:0.8s;
+    opacity: 0;
+}
+#bookWrap .txt_left{
+    position:absolute;
+    width:600px;
+    height:200px;
+    top:20px;
+    left:-650px;
+    visibility: hidden;
+    text-align:right;
+    transition:0.5s;
+    opacity: 0;
+}
+#bookWrap li .txt_b>h3{
+    font-size:30px;
+}
+#bookWrap li .txt_left>h3{
+    font-size:30px;
+}
+#bookWrap img{
+    height:100%;
+    display: block;
+}
+#bookWrap li.selected,#bookWrap li.selected{
+    height:400px;
+    transition:0.s linear;
+}
+#bookWrap li.selected> .txt_b{
+    opacity:1;
+    visibility: visible;
+    transition:0.8s;
+}
+#bookWrap li.selected>.txt_left{
+    opacity:1;
+    visibility: visible;
+    transition:0.8s;
+}
+/*================================*/
+/*장르 카테고리*/
+#category{
+    background-color:#f2f2f2;
+    height:350px;
+}
+#category .wrap{
+    text-align: center;
+    padding:30px 0;
+    position:relative;
+}
+#category .genre{
+    width:800px;
+    margin:auto;
+    display: flex;
+}
+.genre>li{
+    width:200px;
+    border:1px solid #009869;
+    padding:10px 0;
+    background-color: #fff;
+    color:#1f9a74;
+    transition: 0.2s;
+}
+.genre>li:hover{
+    background-color: #1f9a74;
+    color:#fff;
+    transition: 0.2s;
+}
+/*장르 상자 겹침 방지*/
+.genre>li:not(:first-child){
+    margin-left:-1px;
+}
+.genre> li.check{
+    background-color: #1f9a74;
+    color:#fff;
+    transition: 0.2s;
+}
+/*책 슬라이드*/
+.genre> li.check>.genreList{
+    display:flex;
+}
+.genreList{
+    position:absolute;
+    width:100%;
+    height:220px;
+    margin:20px 0;
+    top:80px;
+    left:50%;
+    transform: translateX(-50%);
+    display:none;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items:flex-end;
+}
+.genreList>li{
+    height:220px;
+    padding:0 10px;
+    transition:all 0.3s;
+}
+.genreList>li:hover{
+    transform: scale(1.1);
+    transition:all 0.3s;
+}
+.genreList img{
+    height:100%;
+}
+/*================================*/
+/*소식*/
+#textList{
+    background-color:#1f9a74;
+    padding:30px 0;
+}
+#textList .wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#textList h2{
+    color:#fff;
+    font-size:30px;
+    font-weight: normal;
+}
+.listBox .newsBox{
+    width:500px;
+    height:500px;
+    background-color:#fff;
+    padding:25px 40px;
+    position: relative;
+}
+.newsBox>.more{
+   position: absolute;
+   bottom:460px;
+   right:20px;
+
+}
+.newsBox>.noticeList>li{
+    border-bottom:1px solid #ddd;
+    line-height: 1.2;
+    padding-bottom:10px;
+    margin-top:20px;
+}
+.noticeList a:hover{
+    text-decoration: underline;
+}
+/*snsLink*/
+.snsList{
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    border:1px solid #ddd;
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:1200px){
+    section{
+        width:100%;
+        font-size:10px;
+    }
+    section>.wrap{
+        width:100%;
+    }
+    .slideImg img{
+        width:100%
+    }
+    /*==================================*/
+     /*릿터*/
+    #middleMain{
+        margin-bottom:50px;
+    }
+    .bookLine{
+        width:100%;
+        margin:auto;
+        height:200px;
+        position:relative;
+    }
+    .bookBox{
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        flex-direction: column;
+        left:100px;
+        z-index: 9;
+    }
+    .bookBox>.bookTxt{
+        font-size:15px;
+        line-height: 1.2;
+    }
+    .littorBox{
+        position:absolute;
+        top:50px;
+        right:0px;
+        width:300px;
+        height:350px;
+    }
+    .littorBox>img{
+        width:150px;
+    }
+    .littorBox>img:last-child{
+        position:absolute;
+        top:50px;
+        left:50px;
+    }
+    /*==============================*/   
+    /*책 선택*/
+    #bookselect span{
+        text-align: center;
+    }
+    #bookWrap>ul{
+        height:200px;
+    }
+   #bookWrap>ul.show{
+        z-index: 999;
+        display: flex;
+    }
+   #bookWrap li{
+        width:33.3333%;
+        height:200px;
+        position:relative;
+        transition:0.5s;
+        align-self: flex-end;
+        margin:10px 0;
+    }
+    #bookWrap li.selected{
+        height:200px;
+        position:relative;
+        transition:0.5s linear;
+        align-self: flex-end;
+    }
+    #bookWrap li{
+        width:16.66666%;
+        height:170px;
+        position:relative;
+        transition:0.5s;
+        align-self: flex-end;
+        margin:10px 0;
+    }
+    #bookWrap li.selected{
+        height:170px;
+        position:relative;
+        transition:0.5s linear;
+        align-self: flex-end;
+    }
+    #bookWrap .txt_b{
+        display: none;
+    }
+    #bookWrap .txt_left{
+        display: none;
+    }
+    #bookWrap>ul img{
+        height:100%;
+        display: block;
+        margin:auto;
+    }
+/*================================*/
+    /*장르 카테고리*/
+    #category .genre{
+        width:90%;
+    }
+    .genre>li{
+        width:25%;
+    }
+    /*책 슬라이드*/
+    .genreList{
+        width:100%;
+        overflow: hidden;
+    }
+    .genreList>li{
+        width:16.6666%;
+        height:170px;
+        padding:0px;
+        transition:all 0.3s;
+        margin:5px 0;
+    }
+    .genreList>li:hover{
+        height:170px;
+        transform: scale(1);
+    }
+    .genreList img{
+        height:100%;
+    }
+/*================================*/
+    /*소식*/
+    #textList{
+        background-color:#1f9a74;
+        padding:30px 0;
+    }
+    #textList .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #textList h2{
+        color:#fff;
+        font-size:20px;
+        font-weight: normal;
+        text-align: center;
+    }
+    .listBox{
+        width:100%;
+        margin:20px 0;
+
+    }
+    .listBox .newsBox{
+        width:80%;
+        margin:auto;
+        height:400px;
+        background-color:#fff;
+        padding:10px 20px;
+        position: relative;
+
+    }
+    .newsBox .more{
+        width:100%;
+        position: absolute;
+        text-align: center;
+        bottom:0;
+        bottom:20px;
+        right:0px;
+    }
+    .newsBox>.noticeList>li{
+        border-bottom:1px solid #ddd;
+        line-height: 1.2;
+        padding-bottom:10px;
+        margin-top:20px;
+    }
+    .noticeList>li:nth-child(7){
+        display: none;
+    }
+    .noticeList a:hover{
+        text-decoration: underline;
+    }
+    /*snsLink*/
+    .snsList{
+      display: none;
+    }
+
+}/*media End*/
+@media screen and (max-width:780px){
+    /*==================================*/
+     /*릿터*/
+    #middleMain{
+        margin-bottom:50px;
+    }
+    .bookLine{
+        width:100%;
+        margin:auto;
+        height:150px;
+        position:relative;
+    }
+    .bookBox{
+        position:absolute;
+        width:150px;
+        top:50%;
+        transform: translateY(-50%);
+        flex-direction: column;
+        left:30px;
+        z-index: 9;
+    }
+    .bookBox>.bookTxt{
+        font-size:10px;
+        text-align: left;
+        line-height: 1.2;
+    }
+    .littorBox{
+        position:absolute;
+        top:20px;
+        right:30px;
+        width:150px;
+    }
+    .littorBox>img{
+        width:100px;
+    }
+    .littorBox>img:last-child{
+        position:absolute;
+        top:50px;
+        left:50px;
+    }
+    /*==============================*/   
+    /*책 선택*/
+    #bookselect span{
+        text-align: center;
+    }
+    #bookWrap>ul{
+        height:400px;
+    }
+   #bookWrap>ul.show{
+        z-index: 999;
+        display: flex;
+    }
+   #bookWrap li{
+       width:33.33333%;
+        position:relative;
+        transition:0.5s;
+        align-self: flex-end;
+        margin:10px 0;
+    }
+    #bookWrap li.selected{
+        height:170px;
+        position:relative;
+        transition:0.5s linear;
+        align-self: flex-end;
+    }
+   #bookWrap>ul>li .txt_b{
+        display: none;
+    }
+   #bookWrap>ul img{
+        height:100%;
+        display: block;
+        margin:auto;
+    }
+   #bookWrap>ul>li:hover{
+        height:170px;
+    }
+   #bookWrap>ul>li:hover .txt_b {
+        visibility: visible;
+        opacity: 1;
+        transition:0.3s;
+    }
+   #bookWrap>ul>li.selected{
+        height:170px;
+    }
+   #bookWrap>ul>li>.txt_b{
+        opacity:1;
+        visibility: visible;
+    }
+/*================================*/
+    /*장르 카테고리*/
+    #category .genre{
+        width:90%;
+    }
+    #category{
+        height:500px;
+    }
+    .genre>li{
+        width:25%;
+    }
+    /*책 슬라이드*/
+    .genreList{
+        top:40px;
+        width:100%;
+        height:400px;
+        overflow: hidden;
+    }
+    .genreList>li{
+        width:33.3333%;
+        height:170px;
+        padding:0px;
+        transition:all 0.3s;
+        margin:10px 0;
+    }
+    .genreList>li:hover{
+        transform: scale(1);
+        height:170px;
+        transition:all 0.3s;
+    }
+    .genreList img{
+        height:100%;
+    }
+/*================================*/
+    /*소식*/
+    #textList{
+        background-color:#1f9a74;
+        padding:30px 0;
+    }
+    #textList .wrap{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #textList h2{
+        color:#fff;
+        font-size:20px;
+        font-weight: normal;
+        text-align: center;
+    }
+    .listBox{
+        width:100%;
+        margin:20px 0;
+
+    }
+    .listBox .newsBox{
+        width:80%;
+        margin:auto;
+        height:400px;
+        background-color:#fff;
+        padding:10px 20px;
+        position: relative;
+
+    }
+    .newsBox .more{
+        width:100%;
+        position: absolute;
+        text-align: center;
+        bottom:0;
+        bottom:20px;
+        right:0px;
+    }
+    .newsBox>.noticeList>li{
+        border-bottom:1px solid #ddd;
+        line-height: 1.2;
+        padding-bottom:10px;
+        margin-top:20px;
+    }
+    .noticeList>li:nth-child(7){
+        display: none;
+    }
+    .noticeList a:hover{
+        text-decoration: underline;
+    }
+    /*snsLink*/
+    .snsList{
+      display: none;
+    }
+
+}/*media End*/

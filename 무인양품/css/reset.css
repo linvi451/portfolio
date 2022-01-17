@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family:'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'ONE-Mobile-Bold' ;
+    src: url(/font/ONE_Mobile_Bold.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+
+}
+ul,ol{
+    list-style:none
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+input,textarea,button{
+    outline:0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#272727;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+button{
+    outline:0;
+    border:0;
+    background-color:#fff;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}

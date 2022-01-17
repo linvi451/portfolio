@@ -1,0 +1,67 @@
+@import url(reset.css);
+footer{
+    width:100%;
+    color:#5d5c5c;
+    font-size:12px;
+    
+}
+footer>.wrap{
+    width:1200px;
+    margin:auto;
+}
+.footLine{
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content:center;
+    flex-wrap: wrap;
+}
+.footLine>a , .footLine >span{
+    margin:0 10px;
+}
+.infomation{
+    padding:20px 0; 
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    footer{
+        font-size:10px;
+        background-color:#eee;
+    }
+    footer>.wrap{
+        width:90%;
+    }
+    .footLine {
+        display: none;
+       
+    }
+    .infomation{
+        padding:20px 0; 
+        text-align: center;
+
+        color:#aaa;
+    }
+}
+@media screen and (max-width:780px) {
+    footer{
+        font-size:10px;
+        background-color:#eee;
+    }
+    footer>.wrap{
+        width:90%;
+    }
+    .footLine {
+        display: none;
+       
+    }
+    .infomation{
+        padding:20px 0; 
+        text-align: center;
+
+        color:#aaa;
+    }
+}
