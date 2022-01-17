@@ -13,11 +13,19 @@ window.addEventListener('scroll',()=>{
     console.log(mainHeight);
 });
 const boxes = document.querySelectorAll('.boxwrap>.box');
-boxes.forEach(box=>box.addEventListener('click',()=>{
+const links = document.querySelectorAll('.smallBox>a');
+boxes.forEach((box,index)=>box.addEventListener('mouseover',()=>{
+    box.classList.add('on');
+    links[index].classList.add('on');
+}));
+boxes.forEach((box,index)=>box.addEventListener('mouseout',()=>{
+    box.classList.remove('on');
+    links[index].classList.remove('on');
+}));
+boxes.forEach((box,index)=>box.addEventListener('click',()=>{
     boxes.forEach(box=>box.classList.remove('selected'));
     box.classList.add('selected');
-    // box.classList.toggle('selected');
-    
+    links[index].classList.add('on');
 }));
 const work = document.querySelector('#work');
 window.addEventListener('click',(e) =>{
