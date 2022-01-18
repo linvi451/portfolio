@@ -6,7 +6,7 @@ body{
 section#main{
     width:100%;
     height:1000px;
-    background-color:#0f33c4;
+    background-color:#1b45c9;
     position:relative;
 }
 section>nav{
@@ -274,7 +274,7 @@ nav>a:hover::after{
 }
 .line{
     height:10px;
-    background-color:#0f33c4;
+    background-color:#1b45c9;
 }
 .n1,.n5{
     width:70%;
