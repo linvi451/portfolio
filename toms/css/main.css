@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{margin:0;padding:0; box-sizing: border-box;}
+ul,ol{list-style:none;}
+a{text-decoration: none; color:inherit;}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width:100%;
+    max-width:1920px;
+    background-color: #fff;
+    font-family:'Quicksand';
+    font-weight: 600;
+}
+header>nav{
+    width:1200px;
+    height:80px;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width:150px;
+    line-height: 80px;
+}
+#logo>img{
+    width:100%;
+    vertical-align: middle;
+}
+.saleLine{
+    width:100%;
+    height:40px;
+    background-color: #88d3ee;
+    line-height: 40px;
+    padding:0;
+}
+.lineText{
+    width:1200px;
+    margin:auto;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.lineText>span{
+    margin:0 12px;
+    font-size:14px;
+    text-align: center;
+}
+.lineText>span:hover{
+    font-weight: 800;
+}
+/*============GNB===================*/
+.gnb{
+    display: flex;
+    margin:0 0 0 auto;
+}
+.gnb>li{
+    margin: 0 20px;
+    position:relative;
+}
+.gnb>li:hover{
+    font-weight: 900;
+}
+.gnb>li::after{
+    content: "";
+    width:2px;
+    height:2px;
+    background:#333;
+    display: block;
+    position:absolute;
+    transition: width 0.3s;
+    opacity: 0;
+}
+.gnb>li:last-child::after{
+    content: "";
+    width:2px;
+    height:2px;
+    display: block;
+    position:absolute;
+    transition: width 0.5s;  
+}
+.gnb>li:hover::after{
+    content: "";
+    width:50px;
+    height:2px;
+    background:#333;
+    display: block;
+    position:absolute;
+    transition: width 0.3s; 
+    opacity: 1;
+}
+.gnb>li:last-child:hover::after{
+    content: "";
+    width:70px;
+    height:2px;
+    background:#333;
+    display: block;
+    position:absolute;
+    transition: width 0.5s;  
+}
+/*==========mypage===========*/
+.myPage{
+    display: flex;
+    width:100px;
+}
+.myPage>li{
+    width:20px;
+    margin:0 5px;
+}
+.myPage img{
+    width:100%;
+}
+/*===============section====================*/
+#wrap{
+    width:100%;
+    margin:auto;
+}
+section{
+    width:100%;
+}
+section>div{
+    width:1200px;
+    margin:auto;
+    text-align: center;
+    padding:30px;
+}
+section h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    position:relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+/*===============메인 이미지==================*/
+#top{
+    height:380px;
+    background-color:#eee;
+}
+.mainImg{
+    height:380px;
+    position:relative;
+}
+.mainImg>.round{
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:100px;
+    height:100px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.round.big{
+    top:150px;
+    left:900px;
+    width:200px;
+    height:200px;
+}
+.mainImg>.proImg{
+    position:absolute;
+
+}
+.right{
+    width:150px;
+    top:20px;
+    left:50px;
+    transform:rotate(-190deg);
+}
+.left{
+    width:180px;
+    top:150px;
+    left:160px;
+}
+.mainImg img{
+    width:100%;
+}
+.middle{
+    position:absolute;
+    width:400px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(-5deg);
+}
+.rightImg{
+    position:absolute;
+    top:20px;
+    right:80px;
+    width:250px;
+}
+/*=================== 택스트 메인=======================*/
+.txtBox>h2::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    display: block;
+    height:20px;
+    width:300px;
+    background-color: #88d3ee;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+.txtBox>p{
+    line-height: 1.2;
+    font-size: 18px;
+    margin-bottom:30px;
+}
+.txtBox>a{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size:18px;
+    text-decoration:underline;
+    margin-bottom: 10px;
+}
+/*=================라인 이미지=======================*/
+section>.lineImg{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+/*=================신상품 라인=======================*/
+.showBox{
+    position: relative;
+    width:100%;
+    height:240px;
+    overflow: hidden;
+}
+.showBox img{
+    width:100%;
+}
+.showBox>.prev,.showBox>.next{
+    position: absolute;
+    z-index: 3;
+    width:20px;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+.showBox>.next{
+    right:0;
+}
+.showBox>.prev:hover,.showBox>.next:hover{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.wrapBox{
+    position:absolute;
+    left:0px;
+    width:150%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.proBox{
+    position:relative;
+    width:190px;
+    height:240px;
+    line-height: 240px;
+    background-color: #eee;
+    align-self: bottom;
+}
+.proBox>img{
+    width:90%;
+    vertical-align:bottom;
+    padding-bottom:20px;
+}
+/*==================promotion==========================*/
+#promo1{
+    margin-top:30px;
+}
+#promo1>.wrap{
+    display: flex;
+    justify-content: space-around;
+    font-family:'pretendard';
+}
+.bigMain{
+    width:550px;
+    height:600px;
+    overflow: hidden; 
+}
+.bigMain>img{
+    width:100%;
+}
+.smallMain{
+    width:550px;
+}
+.smallMain>.smallBox1{
+    height:300px;
+    background-color: #88d3ee;
+    padding:55px 40px;
+    text-align: left;
+}
+
+.smallBox1>h2>img:first-child{
+    width:20%;
+}
+.smallBox1>h2>img:last-child{
+    width:45%;
+}
+.smallBox1 span{
+    font-size:40px;
+    font-weight:500;
+    color:#000;
+}
+.smallBox1 p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.smallBox1 strong{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size:18px;
+}
+.smallBox2{
+    width:550px;
+    height:280px;
+    padding:20px 0;
+    position:relative;
+}
+.imgWrap{
+    width:550px;
+    height:200px;
+    overflow: hidden;
+    position: relative;
+}
+.imgWrap>.show{
+    position:absolute;
+    top:0;
+    left:0;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.imgBox{
+    width:270px;
+    margin-right:10px;
+    height:200px;
+    line-height: 190px;
+    background-color: #f5f5f5;
+}
+.imgBox>img{
+    width:90%;
+    vertical-align: middle;
+    mix-blend-mode: darken;
+}
+.smallBox2>button{
+    position:absolute;
+    bottom:0;
+    left:10px;
+    width:40px;
+    height:40px;
+    background-color: transparent;
+    color:#88d3ee;
+    font-size:20px;
+    border-radius: 4px; 
+    border:2px solid #88d3ee;
+    z-index: 999999999;
+}
+.smallBox2>.next{
+    left:60px;
+}
