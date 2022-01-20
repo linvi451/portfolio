@@ -64,8 +64,8 @@ function moveRight(){
 }
 function moveLeft2(){
     count2--;
-    if(coun2t<0){
-        count=0;
+    if(count2<0){
+        count2=0;
             likeB.style.transform=`translateX(${0}px)`;
     }
         likeB.style.transform=`translateX(${proW*(-count2)}px)`;
