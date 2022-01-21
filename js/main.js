@@ -16,7 +16,9 @@ const boxes = document.querySelectorAll('.boxwrap>.box');
 const links = document.querySelectorAll('.smallBox>a');
 boxes.forEach((box,index)=>box.addEventListener('mouseover',()=>{
     box.classList.add('on');
-    links[index].classList.add('on');
+    links.forEach((link,index)=>{
+        links[index].classList.add('on');
+    });
 }));
 boxes.forEach((box,index)=>box.addEventListener('mouseout',()=>{
     box.classList.remove('on');
@@ -25,7 +27,9 @@ boxes.forEach((box,index)=>box.addEventListener('mouseout',()=>{
 boxes.forEach((box,index)=>box.addEventListener('click',()=>{
     boxes.forEach(box=>box.classList.remove('selected'));
     box.classList.add('selected');
-    links[index].classList.add('on');
+    links.forEach((link,index)=>{
+        links[index].classList.add('on');
+    });
 }));
 const work = document.querySelector('#work');
 window.addEventListener('click',(e) =>{
