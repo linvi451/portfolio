@@ -97,7 +97,7 @@ prevBtn.addEventListener('click',()=>{
     });
 
 nextBtn.addEventListener('click',()=>{
-    count3++;
+    count3;
     if(count3>(imgBoxes.length-1)/2){
         count3=((imgBoxes.length/2)-1);
     }
