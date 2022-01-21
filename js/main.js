@@ -16,20 +16,20 @@ const links = document.querySelectorAll('.smallBox>a');
 boxes.forEach((box,index)=>box.addEventListener('mouseover',()=>{
     //box.classList.remove('on');
     box.classList.add('on');
-    links.forEach((link,index)=>{
+    links.forEach(link=>{
         links[index].classList.add('on');
     });
 }));
 boxes.forEach((box,index)=>box.addEventListener('mouseout',()=>{
     boxes[index].classList.remove('on');
-    links.forEach((link,index)=>{
+    links.forEach(link=>{
         links[index].classList.remove('on');
     });
 }));
 boxes.forEach((box,index)=>box.addEventListener('click',()=>{
     boxes.forEach(box=>box.classList.remove('selected'));
     box.classList.add('selected');
-    links.forEach((link,index)=>{
+    links.forEach(link=>{
         links[index].classList.add('on');
     });
 }));
