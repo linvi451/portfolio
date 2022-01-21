@@ -10,7 +10,6 @@ window.addEventListener('scroll',()=>{
     }else{
         navTxt.classList.add('change');
     }
-    console.log(mainHeight);
 });
 const boxes = document.querySelectorAll('.boxwrap>.box');
 const links = document.querySelectorAll('.smallBox>a');
