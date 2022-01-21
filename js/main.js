@@ -17,7 +17,7 @@ const links = document.querySelectorAll('.smallBox>a');
 boxes.forEach((box,index)=>box.addEventListener('mouseover',()=>{
     box.classList.add('on');
     links.forEach((link,index)=>{
-        links[index].classList.add('on');
+        links[index].classList.remove('on');
     });
 }));
 boxes.forEach((box,index)=>box.addEventListener('mouseout',()=>{
