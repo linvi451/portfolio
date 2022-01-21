@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{margin:0;padding:0; box-sizing: border-box;}
 ul,ol{list-style:none;}
 a{text-decoration: none; color:inherit;}
@@ -372,4 +378,163 @@ section>.lineImg{
 }
 .smallBox2>.next{
     left:60px;
+}
+/*==================promotionLong==============================*/
+.promoBox{
+    width:1200px;
+    height:300px;
+    overflow: hidden;
+    position:relative;
+}
+.proImgBox{
+    width:100%;
+    height:300px;
+    overflow: hidden;
+}
+.proImgBox>img{
+    display: block;
+    position:absolute;
+    top:-270px;
+    right:-150px;
+}
+.promoBox>.titleLogo{
+    position:absolute;
+    left:50px;
+    top:45%;
+    transform: translateY(-45%);
+    z-index: 99;
+}
+.titleLogo>span{
+    float:left;
+    display: block;
+    font-size:50px;
+    color:#fff;
+    margin:0 10px;
+}
+.titleLogo>span:first-child{
+    width:170px;
+}
+.titleLogo>span:last-child{
+    width:320px;
+}
+.titleLogo>span img{
+    width:100%;
+}
+.promoBox>button{
+    position:absolute;
+    top:60%;
+    left:250px;
+    width:150px;
+    height:50px;
+    border:none;
+    background-color: #ffc339;
+    z-index: 999999;
+    font-weight: 900;
+    cursor: pointer;
+}
+.promoBox>button:hover{
+    background-color: #d39d1e;
+    color:#fff;
+}
+.filter{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:300px;
+    background-color: #212447;
+    z-index:1;
+    mix-blend-mode:lighten;
+}
+/*======================report=======================*/
+.rep{
+    width:100%;
+    background:#eee;
+    margin:20px 0;
+    position: relative;
+}
+.impactReport{
+    height:260px;
+    overflow: hidden;
+}
+.titleBox{
+    position:absolute;
+    left:100px;
+    top:70px;
+    font-family:'GmarketSansBold';
+    text-align: left;
+    font-size:20px;   
+}
+.titleBox>button{
+    width:200px;
+    height:40px;
+    border: none;
+    background-color: #88d3ee;
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#333;
+    margin:10px 0;
+}
+.impactReport>.titleBox>h2{
+    font-size:50px;
+    margin:0;
+}
+.impectImgBox{
+    width:800px;
+    position:absolute;
+    right:-200px;
+    top:-50%;
+    background-color:transparent;
+}
+.impectImgBox img:first-child{
+    width:200px;
+    position:absolute;
+    top:120px;
+    right:250px;
+    z-index: 22222;
+}
+.impectImgBox img:last-child{
+    mix-blend-mode: multiply;
+    z-index: 111;
+    opacity: 0.8;
+    transform: rotate(-45deg)
+}
+.leanMore{
+    height:300px;
+}
+.learnBox{
+    position:absolute;
+    top:70px;
+    left:250px;
+    font-weight:400;
+}
+.learnBox>h2::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    display: block;
+    height:20px;
+    width:300px;
+    background-color: #88d3ee;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+.learnBox>h2{
+    position:relative;
+}
+.learnBox>a{
+    font-weight: 900;
+    font-size:20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.learnImg{
+    position:absolute;
+    right:150px;
+    height:300px;
+}
+.learnImg img{
+    height:100%;
 }
