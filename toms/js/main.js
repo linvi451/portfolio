@@ -49,7 +49,6 @@ function moveLeft(){
     count1--;
     if(count1<0){
         count1=0;
-            newB.style.transform=`translateX(${0}px)`;
     }
         newB.style.transform=`translateX(${proW*(-count1)}px)`;
         newB.style.transition=`${0.5}s`;
@@ -66,7 +65,6 @@ function moveLeft2(){
     count2--;
     if(count2<0){
         count2=0;
-            likeB.style.transform=`translateX(${0}px)`;
     }
         likeB.style.transform=`translateX(${proW*(-count2)}px)`;
         likeB.style.transition=`${0.8}s`;
