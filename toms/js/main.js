@@ -33,6 +33,7 @@ const newB = document.querySelector('.newBox .wrapBox');
 const likeB = document.querySelector('.likeBox .wrapBox');
 const proB = document.querySelector('.proBox');
 const proW = proB.getBoundingClientRect().width;
+console.log(proW)
 const newPrev= document.querySelector('.newBox .prev');
 const newNext= document.querySelector('.newBox .next');
 const likePrev= document.querySelector('.likeBox .prev');
@@ -45,6 +46,8 @@ newNext.addEventListener('click',()=>{
 });
 likePrev.addEventListener('click',moveLeft2);
 likeNext.addEventListener('click',moveRight2);
+
+//newPrev
 function moveLeft(){
     count1--;
     if(count1<0){
@@ -53,6 +56,7 @@ function moveLeft(){
         newB.style.transform=`translateX(${proW*(-count1)}px)`;
         newB.style.transition=`${0.5}s`;
 }
+//newNext
 function moveRight(){
     count1++;
          if(count1>3){
@@ -61,6 +65,7 @@ function moveRight(){
             newB.style.transform=`translateX(${-(proW*count1)}px)`;
             newB.style.transition=`${0.5}s`;
 }
+//like
 function moveLeft2(){
     count2--;
     if(count2<0){
