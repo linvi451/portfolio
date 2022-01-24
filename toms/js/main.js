@@ -33,7 +33,6 @@ const newB = document.querySelector('.newBox .wrapBox');
 const likeB = document.querySelector('.likeBox .wrapBox');
 const proB = document.querySelector('.proBox');
 const proW = proB.clientWidth;
-console.log(proW);
 const newPrev= document.querySelector('.newBox .prev');
 const newNext= document.querySelector('.newBox .next');
 const likePrev= document.querySelector('.likeBox .prev');
@@ -44,8 +43,8 @@ newPrev.addEventListener('click',()=>{
 newNext.addEventListener('click',()=>{
     moveRight();
 });
-likePrev.addEventListener('click',moveLeft2);
-likeNext.addEventListener('click',moveRight2);
+likePrev.addEventListener('click',()=>{moveLeft2()});
+likeNext.addEventListener('click',()=>{moveRight2()});
 
 //newPrev
 function moveLeft(){
@@ -106,4 +105,11 @@ nextBtn.addEventListener('click',()=>{
     }
         showBox.style.transform=`translateX(${-((imgbW+10)*(count3*2))}px)`;
         showBox.style.transition=`${0.8}s`;  
+});
+//footer Menu
+const footMenu = document.querySelector('#foot .footMain');
+const footBtn = document.querySelector('#foot>.up');
+footBtn.addEventListener('click',()=>{
+    footBtn.classList.toggle('on');
+    footMenu.classList.toggle('on');
 });

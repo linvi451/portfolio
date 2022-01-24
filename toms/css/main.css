@@ -546,15 +546,11 @@ footer{
     transform-origin: bottom;
 }
 .footBox{
-    position:absolute;
-    height:160px;
+    width:1200px;
+    margin:auto;
     position:relative;
-
+    padding:50px 0; 
 }
-footer:hover{
-height: 400px;
-}
-
 .up{
     width:80px;
     height:25px;
@@ -572,18 +568,116 @@ height: 400px;
     display: block;
     font-weight: 900;
     transform: rotate(-90deg);
+    transition: all 0.5s;
 }
-.open>.up>span{
+.up.on>span{
     transform: rotate(-270deg);
+    transition: all 0.5s;
     
 }
+/*footMain/푸터 메뉴박스/*/
+.footMain{
+    display:flex;
+    overflow: hidden;
+    animation: fade-out 0.5s;
+    animation-fill-mode: forwards;
+    justify-content:space-around ;
+}
+@keyframes fade-out {
+    0%{
+        visibility: visible;
+        opacity: 1;
+        height:270px;
+    }
+    50% {
+        visibility: visible;
+        opacity:0.5;
+    }
+    100%{
+        height:0;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.footMain.on{
+    animation: fade-in 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+    0%{
+        visibility: visible;
+        opacity: 0;
+        height:0;
+    }
+    50% {
+        visibility: visible;
+        opacity:0.5;
+    }
+    100%{
+        height:270px;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}
+.menuBox{
+    display: flex;
+    justify-content: space-between;
+}
+.footMenu{
+    margin:0 25px;
+}
+.footMenu>li{
+    margin-bottom:10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.footMenu>li:first-child{
+    font-weight: 900;
+    font-size:20px;
+}
+/*officialBox/푸터 메일 입력박스/*/
+.emailBox{
+    text-align: center;
+
+}
+.emailBox>button{
+    display: inline-block;
+    width:55px;
+    height:39px;
+    margin-left:-2px;
+    border-radius: 0 5px 5px 0;
+    background-color:#88d3ee;
+    border:none;
+    color:#333;
+    font-size:18px;
+}
+.emailBox>p{
+    font-size:15px;
+    margin :10px 0;
+}
+.emailBox>input[type=email]{
+    width:250px;
+    height:40px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    text-indent:8px;
+}
+/*certified*/
+.certified{
+    width:300px;
+    line-height:160px;
+}
+.certified img{
+    width:100%;
+    vertical-align:bottom;
+}
+/*footTitle /푸터 로고 부분/*/
 .footTitle{
     width:780px;
     height:100px;
-    position:absolute;
-    left:50%;
-    bottom:20px;
-    transform: translateX(-50%);
+    margin:auto;
     text-align: center;
 }
 .footLogo{
@@ -597,5 +691,4 @@ height: 400px;
     float:left;
     margin:0 10px;
     font-weight:bold;
-    
 }
