@@ -32,7 +32,7 @@ let count3 =0; //클릭 횟수
 const newB = document.querySelector('.newBox .wrapBox');
 const likeB = document.querySelector('.likeBox .wrapBox');
 const proB = document.querySelector('.proBox');
-const proW = proB.getBoundingClientRect().width;
+const proW = proB.clientWidth;
 console.log(proW);
 const newPrev= document.querySelector('.newBox .prev');
 const newNext= document.querySelector('.newBox .next');
