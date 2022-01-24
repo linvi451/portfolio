@@ -1,0 +1,340 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+section{
+    width:100%;
+}
+section>div{
+    width:1200px;
+    margin:auto;
+}
+
+.box1{
+    padding:100px 0;
+}
+.box1>p{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.2;
+    color:#222;
+}
+.box1>p::selection {
+    background-color: #88d3ee;
+    color:#111;
+}
+.box2{
+    width:100%;
+    height:360px;
+    background-color:#88d3ee;
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+
+}
+.box2>.imgBox{
+    width:450px;
+    height:290px;
+    line-height: 300px;
+}
+.box2>.imgBox>img{
+    width:100%;
+    vertical-align: bottom;
+}
+.box2>.txtBox{
+    font-size:18px;
+    padding:50px 0;
+    text-align:right;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.box2 h2{
+    font-size:40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+.box2>.txtBox>h2::selection,.box2>.txtBox>p::selection{
+    background-color: #fff;
+}
+/*section03 전체 설정*/
+.txtB{
+    width:100%;
+    display: flex;
+    padding:50px;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    position:relative;
+}
+.titleBox{
+    margin-bottom:30px;
+}
+.titleBox *::selection{
+    background-color: #88d3ee;
+    color:#111;
+}
+.contentBox{
+    margin-bottom:30px;
+}
+.contentBox>.imgBox{
+    overflow: hidden;
+}
+/*텍스트, 이미지 박스 설정*/
+.titleBox{
+    width:600px;
+}
+.titleBox h2{
+    text-transform: uppercase;
+    font-size:40px;
+    font-weight:900;
+    font-family: 'Montserrat';
+    position:relative;
+    z-index: 2;
+}
+.txtBox1 h2::before{
+    content: "";
+    position:absolute;
+    bottom:-5px;
+    display: block;
+    width:550px;
+    height:30px;
+    background-color: #eeff5b;
+    z-index: -1;
+    left:0;
+}
+.titleBox>p{
+    margin:20px 0;
+    font-family:'Quicksand';
+    font-weight: 600;
+}
+.titleBox>p:nth-child(2){
+    font-size:18px;
+}
+.titleBox>p:nth-child(3){
+    font-size:15px;
+}
+/*텍스트 박스 01번*/
+.txtBox1{
+    margin-top:50px;
+}
+.img01{
+    width:420px;
+}
+.contentBox img{
+    width:100%;
+}
+/*텍스트박스 2번*/
+.txtBox2{
+    text-align: right;
+}
+.txtB>.titleBox>h2::before{
+    content: "";
+    position:absolute;
+    bottom:-5px;
+    right:0;
+    display: block;
+    width:550px;
+    height:30px;
+    background-color: #eeff5b;
+    z-index: -1;
+}
+.img02{
+    width:500px;
+    height:500px;
+    overflow: hidden;
+    position:absolute;
+    top:-220px;
+    left:50px;
+}
+.img02>img{
+    width:auto;
+    height:100%;
+}
+/*텍스트박스 03*/
+.box03{
+    justify-content: center;
+    position:relative;
+}
+.box03>.contentBox{
+    height:300px;
+}
+.img03{
+    width:1100px;
+    height:300px;
+    margin:auto;
+    background-color: #eee;
+    position:relative;
+}
+.img03 img{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.txtBox3{
+    width:550px;
+    margin-left:auto;
+    text-align: right;
+}
+/*====================box04========================*/
+.box4{
+    margin-top:0px;
+    margin-bottom:100px;
+}
+.box4>h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    text-align: center;
+
+}
+.giveBox{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin:30px 0 50px;
+}
+.giveImg{
+    width:550px;
+    height:350px;
+    line-height: 350px;
+    overflow: hidden;
+}
+.giveImg>img{
+    width:100%;
+    vertical-align: text-bottom;
+}
+.giveTxt{
+    width:550px;
+    margin:auto 0;
+    font-size:15px;
+    font-family: 'Montserrat';
+    font-weight: 500;   
+}
+.giveTxt *::selection{
+    background-color: #88d3ee;
+}
+.giveTxt>h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    text-align: left;
+}
+/*======================report=======================*/
+#report{
+    margin-bottom: 100px;
+}
+#report .rep{
+    width:100%;
+    background:#eee;
+    margin-bottom:30px;
+    position: relative;
+}
+.impactReport{
+    height:260px;
+    overflow: hidden;
+}
+#report .titleBox{
+    position:absolute;
+    left:100px;
+    top:70px;
+    font-family:'GmarketSansBold';
+    text-align: left;
+    font-size:20px;   
+}
+#report .titleBox>p{
+    margin:0;
+    font-family:'GmarketSansBold';
+    font-size:20px; 
+}
+#report h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    position:relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+#report .titleBox>h2{
+    font-family:'GmarketSansBold';
+
+}
+#report .titleBox>button{
+    width:200px;
+    height:40px;
+    border: none;
+    background-color: #88d3ee;
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#333;
+    margin:10px 0;
+    cursor: pointer;
+}
+#report .impactReport>.titleBox>h2{
+    font-size:50px;
+    margin:0;
+}
+#report .impectImgBox{
+    width:800px;
+    position:absolute;
+    right:-200px;
+    top:-50%;
+    background-color:transparent;
+}
+.impectImgBox img:first-child{
+    width:200px;
+    position:absolute;
+    top:120px;
+    right:250px;
+    z-index: 22222;
+}
+.impectImgBox img:last-child{
+    mix-blend-mode: multiply;
+    z-index: 111;
+    opacity: 0.8;
+    transform: rotate(-45deg)
+}
+.leanMore{
+    height:300px;
+}
+.learnBox{
+    position:absolute;
+    top:70px;
+    left:250px;
+    font-weight:400;
+    text-align: center;
+}
+.learnBox>h2::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    display: block;
+    height:20px;
+    width:300px;
+    background-color: #88d3ee;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+.learnBox>h2{
+    position:relative;
+}
+.learnBox>a{
+    font-weight: 900;
+    font-size:20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.learnImg{
+    position:absolute;
+    right:150px;
+    height:300px;
+}
+.learnImg img{
+    height:100%;
+}
