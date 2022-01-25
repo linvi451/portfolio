@@ -33,7 +33,6 @@ const newB = document.querySelector('.newBox .wrapBox');
 const likeB = document.querySelector('.likeBox .wrapBox');
 const proB = document.querySelector('.proBox');
 const proW = proB.clientWidth;
-console.log(proB,imgbW);
 const newPrev= document.querySelector('.newBox .prev');
 const newNext= document.querySelector('.newBox .next');
 const likePrev= document.querySelector('.likeBox .prev');
