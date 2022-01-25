@@ -2,22 +2,22 @@ const mainM = document.querySelector('.subMategory');
 const mainC = document.querySelectorAll('.mainCategory>li');
 const subM = document.querySelectorAll('.subCategory');
 const subC = document.querySelectorAll('.subCategory>li');
-const allM = document.querySelector('.allCategory');
-const allC = document.querySelectorAll('.allCategory>li');
-mainC.forEach((main,index)=>main.addEventListener('click',()=>{
-    mainC.forEach(main=>main.classList.remove('on'));
-    subM.forEach(subm=>subm.classList.remove('on'));
-    main.classList.add('on');
+const allM = document.querySelectorAll('.allCate');
+const allC = document.querySelectorAll('.allCate>li');
+mainC.forEach((mainc,index)=>mainc.addEventListener('click',()=>{
+    mainC.forEach(mainc=>mainc.classList.remove('on'));
+    mainc.classList.add('on');
     subM[index].classList.add('on');
 }));
-subC.forEach(sub=>sub.addEventListener('click',()=>{
-    subC.forEach(sub=>sub.classList.remove('on'));
-    sub.classList.add('on');
-    allM.style.display="flex";
+subC.forEach((subc,index)=>subc.addEventListener('click',()=>{
+    subC.forEach(subc=>subc.classList.remove('on'));
+    subc.classList.add('on');
+    allM[index].classList.add('on');
 }));
-allC.forEach(all=>all.addEventListener('click',()=>{
-    allC.forEach(all=>all.classList.remove('on'));
-    all.classList.add('on');
+allC.forEach(allc=>allc.addEventListener('click',()=>{
+    allC.forEach(allc=>allc.classList.remove('on'));
+    allc.classList.add('on');
+
 }));
 const filter1 = document.querySelectorAll('.filter01>li');
 const filter2 = document.querySelectorAll('.filter02>li');
@@ -44,6 +44,11 @@ imgBoxes.forEach((imgB,index)=>{
         i=1;
     }
 }); 
+/*클릭시 하트*/
+const heartList = document.querySelectorAll('.right>i');
+heartList.forEach(heart=>heart.addEventListener('click',()=>{
+    heart.classList.toggle('fas');
+}));
 /*더보기*/
 const moreBtn = document.querySelector('.more');
 const proBox =document.querySelector('.proBox');

@@ -22,11 +22,10 @@ section>div{
 #category>div{
     height:150px;
     position:relative;
-    text-align: center;
 }
 .mainCategory{
     width:1200px;
-    position:absolute;
+    position:relative;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -56,8 +55,8 @@ section>div{
     justify-content: center;
     font-size: var(--text-15);
     font-weight: 500;
-    left:50%;
     top:60px;
+    left:50%;
     transform: translateX(-50%);
     display:none;
 }
@@ -77,24 +76,23 @@ section>div{
 .subCategory>li.on{
     font-weight: 700;
 }
-.allCategory{
+.allCate{
     width:1200px;
     position:absolute;
     display: none;
-    justify-content: space-around;
+    justify-content: space-between;
     top:30px;
-    left:50%;
+    left:45%;
     transform: translateX(-50%);
     font-weight: 500;
-    margin:0 10px;
 }
-.allCategory.on{
-    display: flex;
+.allCate.on{
+    display:flex;
 }
-.allCategory>li:hover{
-    font-weight: 700;
+.allCate>li{
+    font-weight: 500;
 }
-.allCategory>li.on{
+.allCate>li.on{
     font-weight: 700;
 }
 /*섹션 상품 필터*/
@@ -165,7 +163,7 @@ section>div{
 .proTxt{
     width:290px;
     font-family: 'Montserrat';
-    padding:20px;
+    padding:10px;
 }
 .proTxt>p:first-child{
     font-weight: 700;
@@ -175,7 +173,7 @@ section>div{
 .proTxt>h2{
     font-size:25px;
     font-weight: 700;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 .proTxt>p:last-child{
     width:100%;
@@ -195,7 +193,10 @@ section>div{
 .right{
     right:0;
 }
-.far{margin-left:10px;}
+.fa-heart{
+    font-size:20px;
+    margin-left:10px;
+}
 .middleBox{
     width:100%;
     height:150px;
