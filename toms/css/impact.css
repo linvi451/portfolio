@@ -223,6 +223,53 @@ section>div{
     font-family: 'Montserrat';
     text-align: left;
 }
+/*=======================GroundBox=====================*/
+#groundUp>.wrap{
+    width:1200px;
+    margin:50px auto;
+}
+#groundUp>.wrap>h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+.groundBox{
+    width:100%;
+    display: flex;
+    margin:30px 0;
+    align-items: center;
+    justify-content: center;
+}
+.groundBox>.logoBox{
+    width:390px;
+    height:190px;
+    line-height: 190px;
+    background-color: #eee;
+    text-align: center;
+    margin:0 50px;
+}
+.logoBox.logo1>img{
+    height:80%;
+    vertical-align: middle;
+}
+.logoBox.logo2>img{
+    width:60%;
+    vertical-align: middle;
+}
+.groundTxt{
+    width:500px;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight:500;
+    margin:0 50px;
+}
+.groundTxt>h2{
+    font-weight: 800;
+}
+.groundTxt>p:nth-child(2){
+    font-weight: 600;
+}
 /*======================report=======================*/
 #report{
     margin-bottom: 100px;
