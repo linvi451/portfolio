@@ -60,11 +60,12 @@ footer{
 }
 /*footMain/푸터 메뉴박스/*/
 .footMain{
+    width:1200px;
     display:flex;
     overflow: hidden;
     animation: fade-out 0.5s;
     animation-fill-mode: forwards;
-    justify-content:space-around ;
+    justify-content:space-between ;
 }
 @keyframes fade-out {
     0%{
@@ -108,7 +109,7 @@ footer{
     justify-content: space-between;
 }
 .footMenu{
-    margin:0 25px;
+    margin:0 20px;
 }
 .footMenu>li{
     margin-bottom:10px;
@@ -123,7 +124,6 @@ footer{
 /*officialBox/푸터 메일 입력박스/*/
 .emailBox{
     text-align: center;
-
 }
 .emailBox>button{
     display: inline-block;
