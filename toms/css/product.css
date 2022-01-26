@@ -21,11 +21,11 @@ section>div{
 /*매인 섹션 선택란*/
 #category>div{
     height:150px;
-    position:relative;
+    position:relative; 
 }
 .mainCategory{
     width:1200px;
-    position:relative;
+    position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -70,7 +70,7 @@ section>div{
 .subCategory>li:hover{
     font-weight: 700;
 }
-.subCategory.on{
+.mainCategory>li.on>.subCategory{
     display: flex;
 }
 .subCategory>li.on{
@@ -78,19 +78,21 @@ section>div{
 }
 .allCate{
     width:1200px;
+    margin:0 auto;
     position:absolute;
     display: none;
-    justify-content: space-between;
     top:30px;
     left:45%;
     transform: translateX(-50%);
     font-weight: 500;
+    justify-content: center;
 }
-.allCate.on{
+.subCategory>li.on>.allCate{
     display:flex;
 }
 .allCate>li{
     font-weight: 500;
+    margin:0 10px;
 }
 .allCate>li.on{
     font-weight: 700;

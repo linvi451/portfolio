@@ -1,18 +1,24 @@
-const mainM = document.querySelector('.subMategory');
 const mainC = document.querySelectorAll('.mainCategory>li');
 const subM = document.querySelectorAll('.subCategory');
 const subC = document.querySelectorAll('.subCategory>li');
 const allM = document.querySelectorAll('.allCate');
 const allC = document.querySelectorAll('.allCate>li');
+let mainL = mainC.length;
+let subL = subC.length;
+let allL = allC.length;
+console.log(mainL,subL,allL);
+console.log(subL/mainL,allL/mainL);
 mainC.forEach((mainc,index)=>mainc.addEventListener('click',()=>{
     mainC.forEach(mainc=>mainc.classList.remove('on'));
-    mainc.classList.add('on');
+    subM.forEach(subm=>subm.classList.remove('on'));
+    mainC[index].classList.add('on');
     subM[index].classList.add('on');
 }));
 subC.forEach((subc,index)=>subc.addEventListener('click',()=>{
     subC.forEach(subc=>subc.classList.remove('on'));
-    subc.classList.add('on');
-    allM[index].classList.add('on');
+    allM.forEach(allm=>allm.classList.remove('on'));
+    if(index){}
+    subC[index].classList.add('on');
 }));
 allC.forEach(allc=>allc.addEventListener('click',()=>{
     allC.forEach(allc=>allc.classList.remove('on'));
