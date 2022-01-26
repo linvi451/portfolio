@@ -4,6 +4,8 @@ body{
     min-width:1900px;
     font-family: 'Pretendard';
     scroll-behavior: smooth;
+    overflow: hidden;
+
 }
 
 section#main{
