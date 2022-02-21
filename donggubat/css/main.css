@@ -5,7 +5,7 @@
   --height-50: 50px;
 
   --font-20: 20px;
-  --font-15: 15px;
+  --font-18: 18px;
 }
 /*main-header*/
 header{
@@ -97,7 +97,7 @@ header{
 section{
   width:100%;
 }
-section>div.wrap{
+section>.wrap{
   width:var(--wrapWidth);
   margin:auto;
 }
@@ -138,4 +138,47 @@ section>div.wrap{
   font-size: 25px;
   font-weight: 600;
   color:#fff;
+}
+/*section 두 번째*/
+#contents h1{
+  margin:70px 0 0;
+  font-weight: 900;
+  font-size: 50px;
+  text-align: center;
+}
+#contents p{
+  text-align: center;
+  margin-top:20px;
+  font-size:var(--font-18);
+  font-weight: 600;
+}
+.roundList{
+  margin:70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.roundList>li{
+  position:relative;
+  width:280px;
+  height:280px;
+  border-radius: 140px;
+  background-color:#f6f6f6;
+  text-align:center;
+}
+.roundList>li:nth-child(2n){
+  background-color:#29a79c;
+  color:#fff;
+}
+.roundList .roundTxt{
+  position:absolute;
+  width:260px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.roundTxt>h2{
+  font-size:40px;
+}
+.roundTxt>p{
+  font-size:var(--font-18);
 }
