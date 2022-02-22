@@ -107,18 +107,19 @@ section>.wrap{
 }
 #mainImgBox{
   width:100%;
-  height:900px;
   overflow: hidden;
-  line-height: 800px;
+  line-height:100px;
 }
 #mainImgBox>img{
   width:100%;
-  vertical-align:bottom;
+  height:auto;
+  vertical-align:middle;
 }
 #main>.txtBox{
   position:absolute;
   top:50%;
   left:360px;
+  width:800px;
   transform: translateY(-50%);
   font-family: 'SBAggroB',"pretendard";
   font-size:50px;
@@ -140,24 +141,28 @@ section>.wrap{
   color:#fff;
 }
 /*section 두 번째*/
-#contents h1{
+/*title 공통부분*/
+.titleBox h1{
   margin:70px 0 0;
   font-weight: 900;
   font-size: 50px;
   text-align: center;
+  text-transform: uppercase;
 }
-#contents p{
+.titleBox p{
   text-align: center;
   margin-top:20px;
   font-size:var(--font-18);
   font-weight: 600;
 }
+/* section-원*/
 .roundList{
   margin:70px 0;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
-.roundList>li{
+.roundList>li>.round{
   position:relative;
   width:280px;
   height:280px;
@@ -165,11 +170,11 @@ section>.wrap{
   background-color:#f6f6f6;
   text-align:center;
 }
-.roundList>li:nth-child(2n){
+.roundList>li:nth-child(2n)>.round{
   background-color:#29a79c;
   color:#fff;
 }
-.roundList .roundTxt{
+.round> .roundTxt{
   position:absolute;
   width:260px;
   top:50%;
@@ -181,4 +186,133 @@ section>.wrap{
 }
 .roundTxt>p{
   font-size:var(--font-18);
+  margin:10px 0; 
+  font-weight: 600;
+
+}
+/*section 두 번째.- #factory*/
+#factory .imgBox{
+  width:var(--wrapWidth);
+  height:360px;
+  overflow: hidden;
+  margin:50px 0;
+}
+.imgBox>img{
+  width:100%
+}
+/*세 번째  section-#solid*/
+#solid{
+  margin:80px 0;
+}
+.contentBox{
+  width:1200px;
+  display:flex;
+}
+.contentBox>.sideImg{
+  width:650px;
+  height:390px;
+  overflow: hidden;
+  margin-right: 30px; 
+}
+.sideImg>img{
+  width:100%;
+}
+.sideTxt{
+  width:300px;
+  height:390px;
+  padding:50px 0;
+  margin-left:30px;
+}
+.sideTxt>h1{
+  font-weight:900;
+  font-size: 50px;
+}
+.sideTxt>p{
+  font-size:var(--font-18);
+  margin:20px 0;
+  font-weight: 600;
+}
+/*네 번째 섹션. #business*/
+#business .roundList>li{
+  position:relative;
+}
+#business .roundList>li> p{
+  width:270px;
+  position:absolute;
+  left:50%;
+  top:300px;
+  transform: translateX(-50%);
+  font-size:var(--font-18);
+  font-weight: 600;
+}
+/*#partner section*/
+#partner{
+  padding-top: 100px;
+}
+.roundBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  justify-content: space-between;
+}
+.roundBox>li{
+  width:280px;
+  height:280px;
+  border-radius: 140px;
+  background-color: #f6f6f6;
+  border: 1px solid #29a79c;
+  margin:12px 0;
+  overflow: hidden;
+}
+.imgBox{
+  width:200px;
+  margin:auto;
+  line-height: 280px;
+  text-align: center;
+}
+.imgBox>img{
+  width:100%;
+  vertical-align: middle;
+}
+#portfolio{
+  width:100%;
+  background-color: #29a79c; 
+}
+#portfolio>.wrap{
+  height:950px;
+}
+#portfolio h1{
+  color:#fff;
+  font-size:80px;
+  text-align: center;
+  font-weight: 900;
+  padding:50px 0;
+}
+.portBox{
+  width:1200px;
+}
+.bookList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bookList>li{
+  width:384px;
+  height:300px;
+  background-color:#fff;
+  margin:12px 0;
+}
+.portBox>a{
+  display: block;
+  width:200px;
+  height:50px;
+  line-height: 50px;
+  margin:30px auto;
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: 1px solid transparent;
+  color:#fff;
+  font-size: var(--font-18);
+  cursor: pointer;
+  text-align: center;
 }
