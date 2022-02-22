@@ -274,6 +274,7 @@ section>.wrap{
   width:100%;
   vertical-align: middle;
 }
+/* 4번재 섹션 */
 #portfolio{
   width:100%;
   background-color: #29a79c; 
@@ -288,19 +289,25 @@ section>.wrap{
   font-weight: 900;
   padding:50px 0;
 }
+/*포트폴리오 이미지박스*/
 .portBox{
   width:1200px;
 }
-.bookList{
+.portList{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.bookList>li{
+.portList>li{
   width:384px;
   height:300px;
   background-color:#fff;
   margin:12px 0;
+  position: relative;
+  overflow: hidden;
+}
+.portList>li>img{
+  height: 100%;;
 }
 .portBox>a{
   display: block;
@@ -315,4 +322,81 @@ section>.wrap{
   font-size: var(--font-18);
   cursor: pointer;
   text-align: center;
+}
+/*:hover  효과가 들어가는 박스*/
+.portList .showBox{
+  width:100%;
+  height:150px;
+  background-color:rgba(0, 0, 0, 0.9);
+  position: absolute;
+  bottom:-150px;
+  overflow: hidden;
+  padding:20px;
+  transition: ease-in-out 0.5s;
+}
+.textBox{
+  color:#fff;
+}
+.textBox>h2{
+  font-size:30px;
+}
+.textBox>span{
+  font-size: 15px;
+}
+.textBox>p{
+  font-size: var(--font-18);
+}
+/*:hover 이벤트*/
+.portList>li:hover>.showBox{
+  bottom:0;
+  transition: ease-in-out 0.5s;
+}
+/*footer*/
+footer{
+  width:100%;
+}
+footer .contact{
+  width:1200px;
+  padding:100px 0;
+  margin:auto;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  font-size:18px;
+  font-weight: 600;
+}
+.sideLeft>h1{
+  width:400px;
+  font-size:50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.sideRight::before{
+  position:absolute;
+  top:0px;
+  left:0;
+  content: "";
+  display: block;
+  width:10px;
+  height:250px;
+  background-color: #333;
+}
+.sideRight{
+  width:500px;
+  padding-left: 100px;
+  position:relative;
+}
+.contactList>li{
+  margin:15px 0;
+}
+.foot{
+  width:100%;
+  background-color: #dedede;
+  text-align: center;
+  padding:20px 0;
+  font-size: var(--font-18);
+}
+.foot p{
+  margin:10px 0;
 }
