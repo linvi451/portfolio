@@ -1,0 +1,53 @@
+/*footer*/
+footer{
+  width:100%;
+}
+footer>.wrap{
+  width:1200px;
+  margin:auto;
+}
+footer .contact{
+  width:100%;
+  padding:100px 0;
+  margin:auto;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  font-size:18px;
+  font-weight: 600;
+}
+.sideLeft>h1{
+  width:400px;
+  font-size:50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.sideRight::before{
+  position:absolute;
+  top:0px;
+  left:0;
+  content: "";
+  display: block;
+  width:10px;
+  height:250px;
+  background-color: #333;
+}
+.sideRight{
+  width:500px;
+  padding-left: 100px;
+  position:relative;
+}
+.contactList>li{
+  margin:15px 0;
+}
+.foot{
+  width:100%;
+  background-color: #dedede;
+  text-align: center;
+  padding:20px 0;
+  font-size: var(--font-18);
+}
+.foot p{
+  margin:10px 0;
+}
