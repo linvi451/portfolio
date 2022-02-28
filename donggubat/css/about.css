@@ -75,6 +75,10 @@ section>.wrap{
   line-height: 1.2;
 }
 /*title 공통부분*/
+.titleBox{
+  width: 95%;
+  margin:30px auto;
+}
 .titleBox h1{
   margin:70px 0 0;
   font-weight: 900;
@@ -106,7 +110,7 @@ section>.wrap{
 #identity .brandTxt>p{
   width:100%;
   text-align: left;
-    margin:20px 0;
+  margin:20px 0;
 }
 #identity .brandTxt{
   display: flex;
@@ -252,25 +256,32 @@ section>.wrap{
     font-size: 10px;
     margin-top:5px;
   }
+  .brand{
+    margin:30px 0;
+  }
   .brand>.brandImg{
-    width:300px;
+    width:200px;
   }
   .brand>.brandTxt{
-    width:200px;
+    width:100%;
     text-align: center;
   }
   .brandTxt>h1{
-    font-size:35px;
+    font-size:20px;
+  }
+  .brandTxt>p{
+    font-size:10px;
   }
   /*title 공통부분*/
+  
   .titleBox h1{
-    margin:50px 0 0;
-    font-size: 40px;
+    margin:30px 0 0;
+    font-size: 20px;
   }
   .titleBox p{
     margin:auto;
-    width:80%;
-    font-size:15px;
+    width:95%;
+    font-size:10px;
   }
   .titleBox>p>strong{
     color:#29a79c;
@@ -289,6 +300,18 @@ section>.wrap{
   #identity .brandTxt>p{
     text-align:center;
   }
+  #identity .brandTxt> a{
+    display: block;
+    float:left;
+    width:140px;
+    height:50px;
+    line-height: 50px;
+    background-color: #29a79c;
+    color:#fff;
+    font-weight: 700;
+    margin-right:5px;
+    text-align: center;
+  }
   /*#history*/
   #history .imgLine{
     width:100%;
@@ -305,7 +328,7 @@ section>.wrap{
   }
   .since>.timeline{
     width: 100%;
-    font-size:20px;
+    font-size:10px;
     text-align: center;
     font-weight: 500;
   }
@@ -313,7 +336,7 @@ section>.wrap{
     margin:20px 0;
   }
   .timeline b {
-    font-size: 20px;
+    font-size: 15px;
     color:#29a79c
   }
   /*#overview*/
@@ -329,11 +352,11 @@ section>.wrap{
     margin:10px auto;
   }
   .overviewBox>li>p{
-    font-size:30px;
+    font-size:18px;
     font-weight:900;
   }
   .overviewBox>li>span{
-    font-size:15px;
+    font-size:10px;
     font-weight: 600;
   }
   .overviewBox>li:nth-child(1){
@@ -357,24 +380,26 @@ section>.wrap{
     margin-bottom: 20px;
   }
   #location .titleBox>h1{
-    font-size:60px;
+    font-size:30px;
   }
   #location .titleBox>span{
-    font-size:25px;
+    font-size:15px;
     font-weight: 600;
   }
   .mapList{
     width:100%;
-    height:1300px;
+    height:800px;
     margin:auto;
     display: flex;
-    
     justify-content: space-around;
     text-align: center;
   }
+  .mapList>li{
+    height:400px;
+  }
   .map{
     width:100%;
-    height:400px;
+    height:200px;
     margin-bottom:20px
   }
   .map>iframe{
@@ -389,10 +414,11 @@ section>.wrap{
     font-weight: 500;
   }
   .txtBox>h2{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .txtBox>p{
     margin-bottom: 20px;
+    font-size:15px;
   }
 }

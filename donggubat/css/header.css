@@ -106,11 +106,19 @@ header{
     width:300px;
   }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:370px) {
   #gnb{
-    width:80%;}
+    width:85%;}
   #menu{
     width:80vW;;
+  }
+  #logo{
+    height:30px;
+    line-height: 25px;
+  }
+  #logo img{
+    vertical-align: middle;
+    height:100%;
   }
   #inputBox input[type="text"]{
     width:200px;
