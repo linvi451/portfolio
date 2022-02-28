@@ -181,13 +181,13 @@ section>.wrap{
   font-weight: 600;
 }
 .overviewBox>li:nth-child(1){
-  width: 50%;
+  width: 33.333%;
 }
 .overviewBox>li:nth-child(2){
-  width: 50%;
+  width: 33.3333%;
 }
 .overviewBox>li:nth-child(3){
-  width: 50%;
+  width: 33.3333%;
 }
 /*location*/
 #location{
