@@ -235,7 +235,7 @@ section>.wrap{
   overflow: hidden;
 }
 .portList>li>img{
-  height: 100%;;
+  width:100%;;
 }
 .portBox>a{
   display: block;
@@ -495,7 +495,7 @@ section>.wrap{
     margin:5px 0;
   }
   .portList>li>img{
-    height: 100%;
+    width:100%;;
   }
   .portBox>a{
     width:100px;
