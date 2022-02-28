@@ -106,13 +106,13 @@ header{
     width:300px;
   }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width:375px) {
   #gnb{
     width:80%;}
   #menu{
     width:80vW;;
   }
   #inputBox input[type="text"]{
-    width:500px;
+    width:200px;
   }
 }

@@ -240,22 +240,23 @@ section>.wrap{
   margin-bottom: 20px;
 }
 /*아이폰*/
-@media screen and (max-width:750px) {
+@media screen and (max-width:375px) {
   section>.wrap{
-    width:720px;
+    width:320px;
     margin:auto;
   }
   .mainTitle>h1{
-    font-size:40px;
+    font-size:25px;
   }
   .mainTitle>p{
-    font-size: 15px;
+    font-size: 10px;
+    margin-top:5px;
   }
   .brand>.brandImg{
-    width:500px;
+    width:300px;
   }
   .brand>.brandTxt{
-    width:500px;
+    width:200px;
     text-align: center;
   }
   .brandTxt>h1{
