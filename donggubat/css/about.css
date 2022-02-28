@@ -240,7 +240,7 @@ section>.wrap{
   margin-bottom: 20px;
 }
 /*아이폰*/
-@media screen and (max-width:375px) {
+@media screen and (max-width:370px) {
   section>.wrap{
     width:320px;
     margin:auto;
