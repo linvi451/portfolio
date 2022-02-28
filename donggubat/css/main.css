@@ -202,14 +202,14 @@ section>.wrap{
   vertical-align: middle;
 }
 /* 4번재 섹션 */
-#portfolio{
+#product{
   width:100%;
   background-color: #29a79c; 
 }
-#portfolio>.wrap{
+#product>.wrap{
   height:950px;
 }
-#portfolio h1{
+#product h1{
   color:#fff;
   font-size:80px;
   text-align: center;
@@ -465,14 +465,14 @@ section>.wrap{
     vertical-align: middle;
   }
     /* 4번재 섹션 */
-  #portfolio{
+  #product{
     width:100%;
     background-color: #29a79c; 
   }
-  #portfolio>.wrap{
+  #product>.wrap{
     height:680px;
   }
-  #portfolio h1{
+  #product h1{
     color:#fff;
     font-size:30px;
     text-align: center;

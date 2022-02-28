@@ -1,0 +1,418 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+/*지정함수*/
+:root{
+  --wrapWidth : 1200px;
+  --height-50: 50px;
+  --font-20: 20px;
+  --font-18: 18px;
+}
+
+/*section 기본설정*/
+section{
+  width:100%;
+}
+section>.wrap{
+  width:var(--wrapWidth);
+  margin:auto;
+}
+/*제목*/
+#title{
+  margin:50px 0;
+  position: relative;
+}
+#title>.titleImg{
+  width:100%;
+  height:300px;
+  position:relative;
+  overflow: hidden;
+}
+.titleImg>img{
+  width:100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.7;
+}
+.titleImg::after{
+  content: "";
+  width:100%;
+  height:300px;
+  background-color: black;
+  display: block;
+  z-index: 2;
+  opacity: 0.5;
+}
+.titleBox{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width:100%;
+  text-align: center;
+  color:#fff;
+  z-index: 3;
+  opacity: 1;
+}
+.titleBox>h1{
+  font-size:30px;
+  text-transform: uppercase;
+}
+.titleBox>p{
+  font-size:18px;
+  font-weight: 500;
+}
+.titleMenu{
+  width:100%;
+  background-color:#29a79c;
+}
+.menuLine{
+  width:var(--wrapWidth);
+  height:70px;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  font-size:var(--font-18);
+  font-weight: 500;
+  color:#fff;
+}
+.menuLine>li{
+  cursor: pointer;
+  width:20%;
+  height:70px;
+  text-align: center;
+  line-height:70px;
+  transition: 0.5s;
+}
+.menuLine>li:hover{
+  background:#157b72;
+  transition: 0.5s;
+}
+/*=====================product=========================*/
+
+#product{
+  width:100%;
+}
+
+/*서브 박스 제목*/
+.mainTitle{
+  font-size:30px;
+  color:#fff;
+  z-index: 4;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
+}
+/*상품 메뉴 박스*/
+.proMenu{
+  width:100%;
+  height:1250px;
+  position:relative;
+}
+.proMenu>li{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.proMenu>li.on{
+  z-index: 99;
+}
+/*메뉴 제목*/
+.mainLine{
+  width:100%;
+  height:200px;
+  position:relative;
+  overflow: hidden;
+}
+.mainLine>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:100%;
+  vertical-align: bottom;
+}
+.mainLine::after{
+  content: "";
+  width:100%;
+  height:300px;
+  background-color: black;
+  display: block;
+  z-index: 2;
+  opacity: 0.4;
+}
+.mainTitle>h1{
+  font-size:40px;
+}
+/*productBox (상품 있는 박스)*/
+.productBox{
+  width:100%;
+  margin:auto;
+  margin-top:30px;
+  text-align: center;
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product>li{
+  background:#ddd;
+  margin:12px 0;
+  position:relative;
+  overflow: hidden;
+  width:282px;
+  height:282px;
+}
+
+.proImg>img{
+  width:100%;
+}
+/*:hover Box*/
+.showBox{
+  width:100%;
+  height:150px;
+  background-color:rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom:-150px;
+  overflow: hidden;
+  padding:20px;
+  transition: ease-in-out 0.5s;
+  color:#fff;
+  text-align: left;
+}
+.proTextBox>h2{
+  font-size:20px;
+}
+.proTextBox>span{
+  font-size: 15px;
+}
+.proTextBox>p{
+  font-size: var(--font-18);
+}
+.product>li:hover>.showBox{
+  bottom:0;
+  transition: ease-in-out 0.5s;
+}
+/*productBox Button*/
+.productBox>button{
+  width:150px;
+  height:50px;
+  margin:20px 0;
+  background-color: #29a79c;
+  color:#fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.productBox>button:hover{
+  background-color: #157b72;
+}
+
+@media screen and (max-width:375px) {
+  /*section 기본설정*/
+
+section>.wrap{
+  width:360px;
+  margin:auto;
+}
+/*제목*/
+#title{
+  margin:50px 0;
+  position: relative;
+}
+#title>.titleImg{
+  width:100%;
+  height:130px;
+  position:relative;
+  overflow: hidden;
+}
+.titleImg>img{
+  width:100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.7;
+}
+.titleImg::after{
+  content: "";
+  width:100%;
+  height:130px;
+  background-color: black;
+  display: block;
+  z-index: 2;
+  opacity: 0.5;
+}
+.titleBox{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width:100%;
+  text-align: center;
+  color:#fff;
+  z-index: 3;
+  opacity: 1;
+}
+.titleBox>h1{
+  font-size:25px;
+  text-transform: uppercase;
+}
+.titleBox>p{
+  font-size:10px;
+  font-weight: 500;
+}
+.titleMenu{
+  width:100%;
+  background-color:#29a79c;
+}
+.menuLine{
+  width:360px;
+  height:70px;
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  font-size:15px;
+  font-weight: 500;
+  color:#fff;
+}
+.menuLine>li{
+  cursor: pointer;
+  width:20%;
+  height:70px;
+  text-align: center;
+  line-height:70px;
+  transition: 0.5s;
+}
+.menuLine>li:hover{
+  background:#157b72;
+  transition: 0.5s;
+}
+
+/*=====================product=========================*/
+
+#product{
+  width:100%;
+}
+/*서브 박스 제목*/
+.mainTitle{
+  font-size:30px;
+  color:#fff;
+  z-index: 4;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
+}
+.mainTitle>h1{
+  font-size:30px;
+}
+/*상품 메뉴 박스*/
+.proMenu{
+  width:100%;
+  height:1300px;
+  position:relative;
+}
+.proMenu>li{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.proMenu>li.on{
+  z-index: 99;
+}
+/*메뉴 제목*/
+.mainLine{
+  width:100%;
+  height:120px;
+  position:relative;
+  overflow: hidden;
+}
+.mainLine>h1{
+  font-size:20px;
+}
+.mainLine>img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width:100%;
+  vertical-align: bottom;
+}
+.mainLine::after{
+  content: "";
+  width:100%;
+  height:120px;
+  background-color: black;
+  display: block;
+  z-index: 2;
+  opacity: 0.4;
+}
+
+/*productBox (상품 있는 박스)*/
+.productBox{
+  width:100%;
+  margin:auto;
+  margin-top:30px;
+  text-align: center;
+}
+.product{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product>li{
+  background:#ddd;
+  margin:6px 0;
+  position:relative;
+  overflow: hidden;
+  width:47%;
+  height:170px;
+}
+.proImg>img{
+  width:100%;
+}
+/*:hover Box*/
+.showBox{
+  width:100%;
+  height:170px;
+  background-color:rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom:-170px;
+  overflow: hidden;
+  padding:20px;
+  transition: ease-in-out 0.5s;
+  color:#fff;
+  text-align: left;
+}
+.proTextBox>h2{
+  font-size:20px;
+}
+.proTextBox>span{
+  font-size: 15px;
+}
+.proTextBox>p{
+  font-size:10px;
+}
+.product>li:hover>.showBox{
+  bottom:0;
+  transition: ease-in-out 0.5s;
+}
+/*productBox Button*/
+.productBox>button{
+  width:150px;
+  height:50px;
+  margin:20px 0;
+  background-color: #29a79c;
+  color:#fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.productBox>button:hover{
+  background-color: #157b72;
+}
+  
+}
