@@ -2,7 +2,19 @@ const gameBord = document.querySelector('.game-container')
 const keybord = document.querySelector('.key-container');
 const massageBord = document.querySelector('.massage-container');
 /*단어 설정*/
-let wordle
+let word =  [
+  'Abuse','Adult','Agent','Anger','Apple','Award','Basis','Beach','Birth','Block'
+  ,'Blood','Board','Brain','Bread','Break','Brown','Buyer','Cause','Chain','Chair'
+  ,'Chest','Chief','Child','China','Claim','Month','Motor','Mouth','Music','Night',
+  'Noise','North','Novel','Nurse','Offer','Order','Other','Owner','Panel','Paper',
+  'Party','Peace','Peter','Phase','Phone','Piece','Pilot','Pitch','Place','Plane',
+  'Plant','Plate','Point','Pound','Power','Press','Price','Pride','Prize','Proof',
+  'Queen','Radio'
+]
+let number = Math.floor(Math.random()*word.length);
+let wordle = word[number].toUpperCase();
+
+/*
 const getWordle = ()=>{
   fetch('https://localhost:4500/word')
   .then(response => response.json())
@@ -13,6 +25,7 @@ const getWordle = ()=>{
   .catch(err=>console.log(err))
 }
 getWordle()
+*/
 /*단어창*/
 const wordBlankes= [
   ['','','','',''],
@@ -97,40 +110,40 @@ const check  = () => {
   const guess = wordBlankes[startRow].join('');
   console.log('guess',guess)
   if(startBlank >4){
-    fetch(`https://localhost:4500/check/?word=${guess}`)
-      .then(response=> response.json())
-      .then(json=>{
-        console.log(json)
-        if(json == 'Entry word not found'){
-          console.log(json,'적절한 단어가 아닙니다!')
-          showMassge('적절한 단어가 아닙니다!');
+    // fetch(`https://localhost:4500/check/?word=${guess}`)
+    //   .then(response=> response.json())
+    //   .then(json=>{
+    //     console.log(json)
+    //     if(json == 'Entry word not found'){
+    //       console.log(json,'적절한 단어가 아닙니다!')
+    //       showMassge('적절한 단어가 아닙니다!');
+    //       massageBord.style.display = "block";
+    //       massageBord.classList.add('on');
+    //       return
+    //     }else{
+    //     }
+    //   }).catch(err => console.log(err))
+      console.log(`the answer is... ${wordle}`);
+      flipBlank();
+      if(wordle == guess){
+        showMassge('정답입니다!')
+        massageBord.style.display = "block";
+        massageBord.classList.add('on');
+        isGameOver = true;
+        return
+      }else{
+        if(startRow>=5){
+          isGameOver = false;
+          showMassge('게임 오버!'); 
           massageBord.style.display = "block";
           massageBord.classList.add('on');
           return
-        }else{
-          console.log(`the answer is... ${wordle}`);
-          flipBlank();
-          if(wordle == guess){
-            showMassge('정답입니다!')
-            massageBord.style.display = "block";
-            massageBord.classList.add('on');
-            isGameOver = true;
-            return
-          }else{
-            if(startRow>=5){
-              isGameOver = false;
-              showMassge('게임 오버!'); 
-              massageBord.style.display = "block";
-              massageBord.classList.add('on');
-              return
-            }
-            if (startRow < 5){
-              startRow++;
-              startBlank = 0;
-            }
-          }
         }
-      }).catch(err => console.log(err))
+        if (startRow < 5){
+          startRow++;
+          startBlank = 0;
+        }
+      }
   }
 }
 //메시지 보이기
