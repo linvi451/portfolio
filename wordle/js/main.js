@@ -7,7 +7,7 @@ const getWordle = ()=>{
   fetch('http://localhost:4500/word')
   .then(response => response.json())
   .then(json =>{
-    console.log(json)
+    //console.log(json)
     wordle = json.toUpperCase()
   })
   .catch(err=>console.log(err))
@@ -119,7 +119,7 @@ const check  = () => {
           }else{
             if(startRow>=5){
               isGameOver = false;
-              showMassge('게임 오버!'); 
+              showMassge(`게임 오버! 정답은 ${wordle} 입니다!`); 
               massageBord.style.display = "block";
               massageBord.classList.add('on');
               return
