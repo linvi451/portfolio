@@ -4,7 +4,7 @@ const massageBord = document.querySelector('.massage-container');
 /*단어 설정*/
 let wordle
 const getWordle = ()=>{
-  fetch('https://linvi451.github.io/portfolio/WORDLE/word')
+  fetch('https://linvi451.github.io/word')
   .then(response => response.json())
   .then(json =>{
     console.log(json)
