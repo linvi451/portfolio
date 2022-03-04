@@ -174,7 +174,7 @@ const flipBlank = ()=>{
         tile.classList.add('grey-overlay');  
         addColorKey(dataLetter,'grey-overlay')
       }
-    },700*index)
+    },200)
   })
 }
 /* 키보드 색상 */
