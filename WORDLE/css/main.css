@@ -5,7 +5,7 @@ a{text-decoration: none; color:inherit}
 /*메인 설정*/
 .container {
   width:350px;
-  height:700px;
+  height:750px;
   margin:50px auto;
   border:1px solid #ddd;
   border-radius: 5px;
