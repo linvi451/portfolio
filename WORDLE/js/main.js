@@ -4,7 +4,7 @@ const massageBord = document.querySelector('.massage-container');
 /*단어 설정*/
 let wordle
 const getWordle = ()=>{
-  fetch('http://localhost:4500/word')
+  fetch('https://localhost:4500/word')
   .then(response => response.json())
   .then(json =>{
     console.log(json)
@@ -97,7 +97,7 @@ const check  = () => {
   const guess = wordBlankes[startRow].join('');
   console.log('guess',guess)
   if(startBlank >4){
-    fetch(`http://localhost:4500/check/?word=${guess}`)
+    fetch(`https://localhost:4500/check/?word=${guess}`)
       .then(response=> response.json())
       .then(json=>{
         console.log(json)
