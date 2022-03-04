@@ -45,7 +45,7 @@ nav>h1{
 }
 /*키보드 버튼 설정*/
 .key-container button{
-  width:28px;
+  width:29px;
   height: 45px;
   border:1px solid #ddd;
   border-radius: 3px;
@@ -66,6 +66,8 @@ nav>h1{
 
 .game-container>div{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .game-container .blank{
   display: flex;
