@@ -4,7 +4,7 @@ ul,ol{list-style: none;}
 a{text-decoration: none; color:inherit}
 /*메인 설정*/
 .container {
-  width:510px;
+  width:350px;
   height:90vh;
   margin:20px auto;
   border:1px solid #ddd;
@@ -31,7 +31,7 @@ nav>h1{
   position:relative;
 }
 .game-container{
-  width: 400px;
+  width: 330px;
   height:400px;
   margin:50px auto;
 }
@@ -45,13 +45,14 @@ nav>h1{
 }
 /*키보드 버튼 설정*/
 .key-container button{
-  width:45px;
+  width:30px;
   height: 60px;
   border:1px solid #ddd;
   border-radius: 3px;
   margin:2px;
   color:#222;
   font-family: 'Shippori Antique B1';
+  font-size:11px;
   
 }
 .key-container button:active{
@@ -59,7 +60,7 @@ nav>h1{
 }
 .key-container button:nth-child(20),
 .key-container button:nth-child(28){
-  width:65px;
+  width:43px;
 }
 .key-container button:nth-child(11){
   margin-left:5px;
@@ -71,8 +72,8 @@ nav>h1{
 }
 .game-container .blank{
   display: flex;
-  width:75px;
-  height: 75px;
+  width:65px;
+  height: 65px;
   border:1px solid #ddd;
   align-items: center;
   justify-content: center;
