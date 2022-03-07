@@ -109,42 +109,46 @@ const deleteWord = () => {
 const check  = () => {
   const guess = wordBlankes[startRow].join('');
   console.log('guess',guess)
-  if(startBlank >4){
-    // fetch(`https://localhost:4500/check/?word=${guess}`)
-    //   .then(response=> response.json())
-    //   .then(json=>{
-    //     console.log(json)
-    //     if(json == 'Entry word not found'){
-    //       console.log(json,'적절한 단어가 아닙니다!')
-    //       showMassge('적절한 단어가 아닙니다!');
-    //       massageBord.style.display = "block";
-    //       massageBord.classList.add('on');
-    //       return
-    //     }else{
-    //     }
-    //   }).catch(err => console.log(err))
-      console.log(`the answer is... ${wordle}`);
-      flipBlank();
-      if(wordle == guess){
-        showMassge('정답입니다!')
+  if(startBlank>4){
+    fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${guess}`)
+    .then(response=> response.json())
+    .then(json=>{
+      // console.log(json)
+      if(json.message == "Sorry pal, we couldn't find definitions for the word you were looking for."){
+        showMassge('적절한 단어가 아닙니다!');
         massageBord.style.display = "block";
         massageBord.classList.add('on');
-        isGameOver = true;
         return
       }else{
-        if(startRow>=5){
-          isGameOver = false;
-          showMassge(`게임 오버! 정답은 ${wordle} 입니다!`); 
+        console.log(`the answer is... ${wordle}`);
+        flipBlank();
+        if(wordle == guess){
+          showMassge('정답입니다!')
           massageBord.style.display = "block";
           massageBord.classList.add('on');
+          isGameOver = true;
           return
-        }
-        if (startRow < 5){
-          startRow++;
-          startBlank = 0;
+        }else{
+          if(startRow>=5){
+            isGameOver = false;
+            showMassge(`게임 오버! 정답은 ${wordle} 입니다!`); 
+            massageBord.style.display = "block";
+            massageBord.classList.add('on');
+            return
+          }
+          if (startRow < 5){
+            startRow++;
+            startBlank = 0;
+          }
         }
       }
+    }).catch(err => console.log(err)) 
   }
+  // else{
+  //   showMassge('단어는 5글자입니다!');
+  // massageBord.style.display = "block";
+  // massageBord.classList.add('on');
+//}
 }
 //메시지 보이기
 const showMassge = (massage) => {
