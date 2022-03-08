@@ -141,7 +141,7 @@ const check  = () => {
           }
         }
       }
-    }).catch(err => console.log(err))
+    }).catch(err => console.log(err));
   }
 }
 //메시지 보이기
