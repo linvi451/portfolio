@@ -50,8 +50,7 @@ wordBlankes.forEach((wordBlank,wordIndex)=>{
 /*칸 설정*/ 
 let startRow = 0;
 let startBlank = 0;
-let isGameOver = false
-
+let isGameOver = false;
 /* 키보드 설정*/
 const keys = [
   'Q','W','E','R','T','Y','U','I','O','P',
@@ -69,7 +68,7 @@ keys.forEach(key=>{
 
 /* 단어 입력 */
 const clicked = (letter)=>{
-  console.log('clicked!',letter)
+  //console.log('clicked!',letter)
   //단어 지우기
   if(letter === "<<"){
     deleteWord()
@@ -90,8 +89,8 @@ const addLetter = (letter)=> {
     wordBlankes[startRow][startBlank] = letter;
     blankNum.setAttribute('data',letter);
     startBlank++;
-    console.log('wordBlankes',wordBlankes);
-    
+    console.log('wordBlankes',wordBlankes,startBlank);
+
   }
 }
 /*단어 지우기*/
@@ -109,12 +108,12 @@ const deleteWord = () => {
 const check  = () => {
   const guess = wordBlankes[startRow].join('');
   console.log('guess',guess)
-  if(startBlank>4){
+  if(startBlank >4){
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${guess}`)
     .then(response=> response.json())
     .then(json=>{
-      // console.log(json)
-      if(json.message == "Sorry pal, we couldn't find definitions for the word you were looking for."){
+      console.log(json.message)
+      if(json.message === `Sorry pal, we couldn't find definitions for the word you were looking for.`){
         showMassge('적절한 단어가 아닙니다!');
         massageBord.style.display = "block";
         massageBord.classList.add('on');
@@ -142,13 +141,8 @@ const check  = () => {
           }
         }
       }
-    }).catch(err => console.log(err)) 
+    }).catch(err => console.log(err))
   }
-  // else{
-  //   showMassge('단어는 5글자입니다!');
-  // massageBord.style.display = "block";
-  // massageBord.classList.add('on');
-//}
 }
 //메시지 보이기
 const showMassge = (massage) => {

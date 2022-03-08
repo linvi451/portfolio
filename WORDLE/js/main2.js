@@ -78,8 +78,8 @@ const addLetter = (letter)=> {
     blankNum.setAttribute('data',letter);
     startBlank++;
     console.log('wordBlankes',wordBlankes);
-    
   }
+  
 }
 /*단어 지우기*/
 const deleteWord = () => {
@@ -89,7 +89,6 @@ const deleteWord = () => {
     blankNum.textContent ='';
     wordBlankes[startRow][startBlank] = ''; 
     blankNum.setAttribute('data','');
-    
   }
 }
 /* 단어 제출 */
