@@ -142,7 +142,7 @@ nav>h1{
   color:#fff !important;
 }
 .fliping{
-  animation: 0.5s linear flip
+  animation: 0.3s linear flip
 }
 @keyframes flip {
   0%{
