@@ -151,7 +151,7 @@ nav>a:hover::after{
     top: 55%;
     transform:translateY(-50%);
     width:100%;
-    height:400px;
+    height:420px;
     background-color:#193285;
 }
 .left{
@@ -199,7 +199,7 @@ nav>a:hover::after{
     font-weight: 600;
 }
 .introduce{
-    top:260px;
+    top:280px;
 }
 .introduce >p{ 
     font-size:15px;
